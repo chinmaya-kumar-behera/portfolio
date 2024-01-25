@@ -7,6 +7,7 @@ import Navbar from "@/views/header";
 import AboutMe from "@/views/aboutme/AboutMe";
 import Skills from "@/views/skill";
 import Experience from "@/views/experience";
+import Image from "next/image";
 
 export default function Home() {
 
@@ -17,7 +18,6 @@ export default function Home() {
         <section className="relative mx-auto">
           <PageContainer>
             <Navbar />
-
             <section className="flex justify-between mt-10 pl-5 mb-10">
               <div className="w-1/2 flex flex-col justify-center gap-8 -translate-y-20">
                 <div className="space-y-4 text-lg text-gray-500">
@@ -71,12 +71,13 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="h-[630px] w-[630px] overflow-hidden">
+              <div className="h-[630px] w-[630px] overflow-hidden relative">
                 <img
                   src="https://websitedemos.net/portfolio-02/wp-content/uploads/sites/864/2021/05/about-01-free-img.jpg"
                   alt="profile_image"
                   className="object-cover object-center rounded-full"
                 />
+                {/* <Image src={'https://websitedemos.net/portfolio-02/wp-content/uploads/sites/864/2021/05/about-01-free-img.jpg'} width={100} height={100}/> */}
               </div>
             </section>
 
