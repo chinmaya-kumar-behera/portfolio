@@ -7,7 +7,7 @@ import Navbar from "@/views/header";
 import AboutMe from "@/views/aboutme/AboutMe";
 import Skills from "@/views/skill";
 import Experience from "@/views/experience";
-import Image from "next/image";
+import SocialLinks from "@/views/social";
 
 export default function Home() {
 
@@ -15,6 +15,9 @@ export default function Home() {
     <main className="mx-auto">
       <div className="relative min-h-screen overflow-hidden">
         <div className="absolute -right-[50%] -top-[30%] h-[1400px] w-[1400px] rounded-full bg-gradient-to-r from-blue-100 via-blue-50 to-white"></div>
+        <div className="fixed right-2 bottom-20 z-20">
+          <SocialLinks />
+        </div>
         <section className="relative mx-auto">
           <PageContainer>
             <Navbar />
