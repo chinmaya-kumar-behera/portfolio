@@ -3,6 +3,8 @@ import React from "react";
 import GlowDot from "./components/GlowDot";
 import YearBox from "./components/YearBox";
 import VerticalLine from "./components/VerticalLine";
+import Image from "next/image";
+import learnDukeImage from "../../_asssets/images/learnduke-image.png"
 
 const Experience = () => {
   return (
@@ -28,7 +30,7 @@ const Experience = () => {
                   YCY CLASS EDUTECH PRIVATE LIMITED, BHUBANESWAR
                 </h3>
 
-                <div className="">
+                <div className="pr-10">
                   {/* <p className="text-xl font-barlow-semi-condensed"> */}
                   <p className="font-playfair">
                     hello sir i am chinmaya kumar behera going to kill ravana
@@ -52,12 +54,20 @@ const Experience = () => {
         </div>
 
         <div className="w-1/3 px-5 py-2">
-          <div className="h-[250px] bg-red-300 rounded-xl">
-            Project Work Photos
+          <div className="relative h-[250px] bg-gray-100 w-full rounded">
+            <div className="relative h-full w-full rounded">
+              <a href="https://learnduke.com">
+                <Image
+                  className="object-cover object-center hover:scale-105 transition-all"
+                  alt="Project_image"
+                  src={learnDukeImage}
+                  fill={true}
+                />
+              </a>
+            </div>
           </div>
         </div>
       </div>
-
     </section>
   );
 };

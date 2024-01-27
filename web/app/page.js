@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <main className="mx-auto">
       <div className="relative min-h-screen overflow-hidden">
-        <div className="absolute -right-[50%] -top-[30%] h-[1400px] w-[1400px] rounded-full bg-gradient-to-r from-blue-100 via-blue-50 to-white"></div>
+        <div className="absolute -right-[65%] -top-[25%] h-[1700px] w-[1700px] rounded-full bg-gradient-to-br from-blue-100 via-blue-50 to-white"/>
         <div className="fixed right-2 bottom-20 z-20">
           <SocialLinks />
         </div>
