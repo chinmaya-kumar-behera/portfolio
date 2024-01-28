@@ -22,7 +22,7 @@ const Skills = () => {
   const skillStyle = `w-[250px] h-[250px] flex justify-center items-center text-center bg-gray-200 rounded-lg hover:scale-105 transition-all duration-500 hover:bg-gray-100 hover:text-[${THEME_COLOR}]`;
 
   return (
-    <section className="w-full space-y-20">
+    <section id="skills" className="w-full space-y-20">
       <div className="text-center">
         <h1 className="text-5xl font-playfair font-bold">My Skills</h1>
       </div>

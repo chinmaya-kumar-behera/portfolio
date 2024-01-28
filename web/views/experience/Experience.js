@@ -9,7 +9,7 @@ import { SectionHeading } from "@/components/shared";
 
 const Experience = () => {
   return (
-    <section className="relative w-full space-y-5">
+    <section id="experience" className="relative w-full space-y-5">
       <SectionHeading heading={"Experience"} />
 
       <div className="flex py-10">

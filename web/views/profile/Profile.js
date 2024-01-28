@@ -4,7 +4,7 @@ import { TypeAnimation } from 'react-type-animation';
 const Profile = () => {
   
   return (
-    <section className="flex justify-between mt-10 pl-5 mb-10">
+    <section id="profile-section" className="flex justify-between mt-10 pl-5 mb-10">
       <div className="w-1/2 flex flex-col justify-center gap-8">
         <div className="space-y-4 text-lg text-gray-500">
           <TypeAnimation

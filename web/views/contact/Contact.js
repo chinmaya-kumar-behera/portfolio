@@ -11,6 +11,7 @@ import {
   FaTwitter,
 } from "react-icons/fa";
 import NavigationHandler from "@/handler/NavigationHandler";
+import Link from "next/link";
 
 const Contact = () => {
     const {
@@ -24,46 +25,55 @@ const Contact = () => {
   const iconStyle = `p-3 bg-blue-500 text-white rounded-full shadow-blue-300 cursor-pointer hover:bg-blue-50 hover:text-blue-500 transition-all duration-500 `;
 
   return (
-    <div className="space-y-10">
-      <div className="text-center">
-        <h1 className="text-6xl font-bold font-playfair">Contact Me</h1>
-      </div>
-      <div className="">
-        <div className="flex items-center gap-3 py-2">
-          <div className="relative h-[70px] w-[70px]">
-            <Image
-              src={logo}
-              fill={true}
-              className="absolute h-full w-full object-cover object-center"
-            />
+    <section id="contact" className="space-y-10">
+      <div className="space-y-5">
+        <div className="">
+          <div className="text-center">
+            <h1 className="text-6xl font-bold font-playfair">Contact Me</h1>
           </div>
-          <span className="text-3xl font-barlow-semi-condensed font-bold tracking-wider text-gray-600">
-            CHINMAYA KUMAR
-          </span>
+          <div className="">
+            <div className="flex items-center gap-3 py-2">
+              <div className="relative h-[70px] w-[70px]">
+                <Link
+                  href={"#profile"}
+                  className="hover:text-blue-500 transition-all"
+                >
+                  <Image
+                    src={logo}
+                    fill={true}
+                    className="absolute h-full w-full object-cover object-center"
+                  />
+                </Link>
+              </div>
+              <span className="text-3xl font-barlow-semi-condensed font-bold tracking-wider text-gray-600">
+                CHINMAYA KUMAR
+              </span>
+            </div>
+          </div>
         </div>
-      </div>
-      <div className="space-y-2 font-barlow-semi-condensed">
-        <div className="flex items-center gap-2">
-          <span
-            className="p-1.5 rounded-full"
-            style={{ backgroundColor: THEME_COLOR }}
-          >
-            <CiMail className="text-lg text-white" />
-          </span>
-          <span className="font-semibold text-gray-700 tracking-wider">
-            chinmayakumarbehera.official@gmail.com
-          </span>
-        </div>
-        <div className="flex items-center gap-2">
-          <span
-            className="p-1.5 rounded-full"
-            style={{ backgroundColor: THEME_COLOR }}
-          >
-            <CiPhone className="text-lg text-white" />
-          </span>
-          <span className="font-semibold text-gray-700 tracking-widest">
-            7008962911
-          </span>
+        <div className="space-y-2 font-barlow-semi-condensed">
+          <div className="flex items-center gap-2">
+            <span
+              className="p-1.5 rounded-full"
+              style={{ backgroundColor: THEME_COLOR }}
+            >
+              <CiMail className="text-lg text-white" />
+            </span>
+            <span className="font-semibold text-gray-700 tracking-wider">
+              chinmayakumarbehera.official@gmail.com
+            </span>
+          </div>
+          <div className="flex items-center gap-2">
+            <span
+              className="p-1.5 rounded-full"
+              style={{ backgroundColor: THEME_COLOR }}
+            >
+              <CiPhone className="text-lg text-white" />
+            </span>
+            <span className="font-semibold text-gray-700 tracking-widest">
+              7008962911
+            </span>
+          </div>
         </div>
       </div>
 
@@ -86,7 +96,7 @@ const Contact = () => {
           <FaTwitter />
         </button>
       </div>
-    </div>
+    </section>
   );
 };
 

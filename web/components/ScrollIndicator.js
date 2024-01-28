@@ -21,7 +21,7 @@ const ScrollIndicator = () => {
       <div
         id="myBar"
         className="transition-all"
-        style={{ width: "0%", height: "5px", background: THEME_COLOR, position: "fixed", top: "0", left: "0",zIndex:'30',borderRadius:'5px', }}/>
+        style={{ width: "0%", height: "3px", background: THEME_COLOR, position: "fixed", top: "0", left: "0",zIndex:'30',borderRadius:'5px', }}/>
     </div>
   );
 };

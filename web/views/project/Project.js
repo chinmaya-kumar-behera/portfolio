@@ -6,7 +6,7 @@ import React from 'react'
 const Project = () => {
     const projectCardStyle = ''
   return (
-    <div className="">
+    <section id="projects" className="">
       <SectionHeading heading={"Project"} />
       <div className="mt-10 space-y-3">
         {/* first line */}
@@ -102,7 +102,7 @@ const Project = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

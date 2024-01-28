@@ -4,7 +4,7 @@ import React from "react";
 
 const AboutMe = () => {
   return (
-    <main className="space-y-28">
+    <main id="about" className="space-y-28">
       <section className="space-y-5">
         <h2
           className={`text-lg font-semibold font-barlow-semi-condensed`}
