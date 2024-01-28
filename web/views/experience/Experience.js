@@ -5,13 +5,12 @@ import YearBox from "./components/YearBox";
 import VerticalLine from "./components/VerticalLine";
 import Image from "next/image";
 import learnDukeImage from "../../_asssets/images/learnduke-image.png"
+import { SectionHeading } from "@/components/shared";
 
 const Experience = () => {
   return (
-    <section className="relative w-full py-10 space-y-5">
-      <div className="font-playfair font-bold">
-        <h1 className="text-6xl">Experience</h1>
-      </div>
+    <section className="relative w-full space-y-5">
+      <SectionHeading heading={"Experience"} />
 
       <div className="flex py-10">
         <div className="w-2/3 flex gap-12">
