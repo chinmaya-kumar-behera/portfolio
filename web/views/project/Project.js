@@ -24,7 +24,10 @@ const Project = () => {
                 className="text-lg font-barlow-semi-condensed"
                 style={{ color: THEME_COLOR }}
               >
-                Hello sir i am chinmaya kumar behera going to kill ravana
+                <strong> Workers Hive</strong> - {' '}
+                <span className="text-gray-700">
+                  A site to register as a worker and get work
+                </span>
               </h5>
             </div>
           </div>
@@ -96,7 +99,7 @@ const Project = () => {
                 className="text-lg font-barlow-semi-condensed"
                 style={{ color: THEME_COLOR }}
               >
-                Hello sir i am chinmaya 
+                Hello sir i am chinmaya
               </h5>
             </div>
           </div>
