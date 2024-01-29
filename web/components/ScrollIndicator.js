@@ -16,7 +16,7 @@ const ScrollIndicator = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-  return (
+  return (  
     <div>
       <div
         id="myBar"

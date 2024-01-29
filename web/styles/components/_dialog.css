@@ -28,7 +28,7 @@
 }
 
 .dialog-content {
-    @apply shadow-xl relative h-full;
+    @apply relative h-full;
 }
 
 .dialog-overlay {

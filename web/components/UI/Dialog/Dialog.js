@@ -1,11 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Modal from "react-modal";
 import classNames from "classnames";
 import PropTypes from "prop-types";
 import { motion } from "framer-motion";
 import CloseButton from "../CloseButton";
 
-const Dialog = (props) => {
+const Dialog = (props) => {  
   const {
     children,
     className,
@@ -22,6 +22,17 @@ const Dialog = (props) => {
     closeTimeoutMS,
     ...rest
   } = props;
+
+    useEffect(() => {
+      if (isOpen) {
+        document.body.style.overflow = "hidden";
+      } else {
+        document.body.style.overflow = "auto";
+      }
+      return () => {
+        document.body.style.overflow = "auto";
+      };
+    }, [isOpen]);
 
   const onCloseClick = (e) => {
     onClose(e);
