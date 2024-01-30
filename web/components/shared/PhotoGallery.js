@@ -28,18 +28,18 @@ const PhotoGallery = ({ photos }) => {
 
   return (
     <div>
-      <div className="relative h-[400px] w-full flex gap-10 rounded-md bg-gray-50 p-2">
-        <div className="relative h-full min-w-[170px]  py-4">
+      <div className="relative h-[400px] w-full flex gap-10 rounded-md bg-gray-50 p-1">
+        <div className="relative h-full min-w-[170px] py-6">
           <div
             ref={imageContainerRef}
-            className="h-full overflow-y-auto space-y-1"
+            className="h-full overflow-y-auto no-scrollbar space-y-2"
           >
-            <div className="absolute top-0 w-full flex justify-center items-center">
+            <div className="absolute -top-1 w-full flex justify-center items-center z-10">
               <button
-                className=" text-gray-500"
+                className="flex items-center justify-center pb-2 text-gray-500"
                 onClick={() => handleArrowClick("up")}
               >
-                <IoIosArrowUp />
+                <IoIosArrowUp className="text-2xl text-gray-800" />
               </button>
             </div>
             {photos.map((el, index) => (
@@ -57,12 +57,12 @@ const PhotoGallery = ({ photos }) => {
                 />
               </div>
             ))}
-            <div className="absolute bottom-0 w-full flex justify-center items-center">
+            <div className="absolute -bottom-1 w-full flex justify-center items-center z-5">
               <button
-                className="text-gray-500"
+                className="flex items-center justify-center text-gray-500"
                 onClick={() => handleArrowClick("down")}
               >
-                <IoIosArrowDown />
+                <IoIosArrowDown className="text-2xl text-gray-800" />
               </button>
             </div>
           </div>
