@@ -13,14 +13,14 @@ const AboutMe = () => {
           About Me
         </h2>
         <div className="">
-          <p className="font-playfair text-5xl font-bold">
+          <p className="font-playfair text-3xl md:text-4xl lg:text-5xl font-bold">
             I am an enthusiastic web developer based in Bengaluru, with a rich
             experience of over 5 years in website design and development.
           </p>
         </div>
       </section>
-      <section className="flex items-start">
-        <div className="w-1/2">
+      <section className="flex flex-col md:flex-row  gap-5 md:gap-0 items-start">
+        <div className="w-full md:w-1/2 lg:px-5">
           <h2
             className="text-4xl font-playfair font-bold"
             style={{ color: THEME_COLOR }}
@@ -28,7 +28,7 @@ const AboutMe = () => {
             I design professional & beautiful websites
           </h2>
         </div>
-        <div className="w-1/2 space-y-2 text-lg text-red-400 font-barlow-semi-condensed">
+        <div className="w-full md:w-1/2 space-y-2 text-lg text-red-400 font-barlow-semi-condensed">
           <p className="text-gray-900">
             With years of experience in graphic and web design I have mastered
             the skills of understanding client requirements according to the

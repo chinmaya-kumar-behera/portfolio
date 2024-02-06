@@ -19,19 +19,26 @@ const Skills = () => {
     { name: "SQL (ORACLE)", logo: sql },
     { name: "Git", logo: git },
   ];
-  const skillStyle = `w-[250px] h-[250px] flex justify-center items-center text-center bg-gray-200 rounded-lg hover:scale-105 transition-all duration-500 hover:bg-gray-100 hover:text-[${THEME_COLOR}]`;
+  const skillStyle = `w-[150px] md:w-[250px] h-[150px] md:h-[250px] flex justify-center items-center text-center bg-gray-200 rounded-lg hover:scale-105 transition-all duration-500 hover:bg-gray-100 hover:text-[${THEME_COLOR}]`;
 
   return (
-    <section id="skills" className="w-full space-y-20">
+    <section id="skills" className="w-full space-y-10 lg:space-y-20">
       <div className="text-center">
-        <h1 className="text-5xl font-playfair font-bold">My Skills</h1>
+        <h1 className="text-3xl md:text-4xl lg:text-5xl font-playfair font-bold">
+          My Skills
+        </h1>
       </div>
       <div className="flex flex-wrap gap-5 justify-center">
         {skills.map((el) => (
           <div key={el.name} className={skillStyle}>
             <div className="flex flex-col gap-4 items-center">
-              <Image className="" src={el.logo} height={80} width={80} />
-              <span className="font-semibold">{el.name}</span>
+              <div className="lg:hidden">
+                <Image className="" src={el.logo} height={50} width={50} />
+              </div>
+              <div className="hidden lg:block">
+                <Image className="" src={el.logo} height={80} width={80} />
+              </div>
+              <span className="font-semibold text-md md:text-lg">{el.name}</span>
             </div>
           </div>
         ))}

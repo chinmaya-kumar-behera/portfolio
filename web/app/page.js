@@ -23,7 +23,6 @@ export default function Home() {
       </div>
       <div className="relative min-h-screen overflow-hidden">
         <div className="absolute -right-[65%] -top-[25%] h-[1700px] w-[1700px] rounded-full bg-gradient-to-br from-blue-100 via-blue-50 to-white" />
-
         <div
           className="fixed right-2 bottom-6"
           style={{ zIndex: SOCIAL_LINK_INDEX }}
@@ -37,7 +36,7 @@ export default function Home() {
 
             <Profile />
 
-            <div className="py-20">
+            <div className="py-20 mt-28 lg:mt-0">
               <AboutMe />
             </div>
 
