@@ -4,7 +4,7 @@ import React from 'react'
 const GlowDot = () => {
   return (
     <div
-      className="min-w-5 min-h-5 rounded-full "
+      className="min-w-3 lg:min-w-5 min-h-3 lg:min-h-5 rounded-full "
       style={{
         backgroundColor: THEME_COLOR,
         boxShadow: `0 0 20px 3px ${THEME_COLOR}`,

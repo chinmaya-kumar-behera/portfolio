@@ -3,7 +3,7 @@ import React from 'react'
 
 const YearBox = () => {
   return (
-    <div className="relative h-9 bg-gray-200 flex justify-center items-center">
+    <div className="max-w-[120px] relative h-9 bg-gray-200 flex justify-center items-center">
       <span className="relative w-[120px] text-sm z-10 px-5" style={{ color: THEME_COLOR }}>
         2022-2023
       </span>

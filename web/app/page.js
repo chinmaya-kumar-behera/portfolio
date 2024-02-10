@@ -44,7 +44,7 @@ export default function Home() {
               <Skills />
             </div>
 
-            <div className="py-10">
+            <div className="py-5 lg:py-10">
               <Experience />
             </div>
 

@@ -25,11 +25,11 @@ const Contact = () => {
   const iconStyle = `p-3 bg-blue-500 text-white rounded-full shadow-blue-300 cursor-pointer hover:bg-blue-50 hover:text-blue-500 transition-all duration-500 `;
 
   return (
-    <section id="contact" className="space-y-10">
+    <section id="contact" className="space-y-10 px-2 lg:px-0">
       <div className="space-y-5">
-        <div className="">
+        <div className="space-y-5">
           <div className="text-center">
-            <h1 className="text-6xl font-bold font-playfair">Contact Me</h1>
+            <h1 className="text-3xl lg:text-6xl font-bold font-playfair">Contact Me</h1>
           </div>
           <div className="">
             <div className="flex items-center gap-3 py-2">
