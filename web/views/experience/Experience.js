@@ -15,7 +15,7 @@ const Experience = () => {
       <div className="flex flex-col gap-5 lg:gap-0 lg:flex-row py-10">
         <div className="w-full lg:w-2/3 flex flex-col lg:flex-row gap-12">
           <YearBox />
-          <div className="flex gap-5 lg:gap-10 mt-2">
+          <div className="flex gap-5 lg:gap-10 mt-2 pl-4 lg:pl-0">
             <div className="flex flex-col items-center gap-5">
               <GlowDot />
               <VerticalLine />
