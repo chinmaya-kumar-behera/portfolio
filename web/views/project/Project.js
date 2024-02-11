@@ -14,15 +14,13 @@ const Project = () => {
     setModal(true)
   };
 
-  const projectCardStyle = '';
-
   return (
     <section id="projects" className="">
-      <SectionHeading heading={"Project"} />
+      <SectionHeading heading={"Projects"} />
 
       <div className="mt-10">
         <div className="">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-3 lg:gap-6">
             {Array.from([1, 2]).map((el, index) => (
               <ProjectCard key={index} size={'lg'} />
             ))}
@@ -30,7 +28,7 @@ const Project = () => {
         </div>
 
         <div className="">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6">
             {Array.from([1, 2, 3]).map((el, index) => (
               <ProjectCard key={index} />
             ))}

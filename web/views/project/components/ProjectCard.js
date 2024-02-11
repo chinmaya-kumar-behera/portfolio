@@ -17,9 +17,6 @@ const ProjectCard = ({ size ='sm', className }) => {
     
   },[])
 
-
-  console.log(cardSize[size])
-
   return (
     <div
       className={`w-full h-fit bg-gray-100 p-5 space-y-3`}
@@ -32,13 +29,13 @@ const ProjectCard = ({ size ='sm', className }) => {
           className="h-full w-full object-center object-cover rounded-md"
         />
       </div>
-      <div className="">
+      <div className="text-[16px] lg:text-lg">
         <h5
-          className="text-lg font-barlow-semi-condensed"
+          className="font-barlow-semi-condensed"
           style={{ color: THEME_COLOR }}
         >
           <strong> Workers Hive</strong> -{" "}
-          <span className="text-gray-700">
+          <span className=" text-gray-700">
             A site to register as a worker and get work
           </span>
         </h5>
