@@ -8,6 +8,7 @@ import node from "../../_asssets/logo/nodejs.png";
 import mongodb from "../../_asssets/logo/mongodb.png";
 import Image from "next/image";
 import { THEME_COLOR } from "@/constant/color.constant";
+import { SectionHeading } from "@/components/shared";
 
 const Skills = () => {
   const skills = [
@@ -23,11 +24,7 @@ const Skills = () => {
 
   return (
     <section id="skills" className="w-full space-y-10 lg:space-y-20">
-      <div className="text-center">
-        <h1 className="text-3xl md:text-4xl lg:text-5xl font-playfair font-bold">
-          My Skills
-        </h1>
-      </div>
+      <SectionHeading heading={"Skills"} />
       <div className="flex flex-wrap gap-5 justify-center">
         {skills.map((el) => (
           <div key={el.name} className={skillStyle}>
@@ -38,7 +35,9 @@ const Skills = () => {
               <div className="hidden lg:block">
                 <Image className="" src={el.logo} height={80} width={80} />
               </div>
-              <span className="font-semibold text-md md:text-lg">{el.name}</span>
+              <span className="font-semibold text-md md:text-lg">
+                {el.name}
+              </span>
             </div>
           </div>
         ))}
