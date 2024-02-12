@@ -8,6 +8,7 @@ import { useRouter } from "next/navigation";
 import { HUMBURGER_INDEX } from '@/constant/zIndex.constant';
 import { RxCross2 } from 'react-icons/rx';
 import { THEME_COLOR } from '@/constant/color.constant';
+import ThemeSwitch from './components/ThemeSwitch';
 
 const Navbar = () => {
   const router = useRouter();
@@ -63,6 +64,7 @@ const Navbar = () => {
         <Link href={"#contact"} className="hover:text-blue-500 transition-all">
           CONTACT
         </Link>
+        {/* <ThemeSwitch /> */}
       </div>
 
       <div className="mr-4 lg:hidden">
@@ -105,7 +107,6 @@ const Navbar = () => {
                   onClick={() => setIsMenuOpen((prev) => !prev)}
                   style={{ color: THEME_COLOR }}
                 >
-                  
                   <RxCross2 className="text-2xl" />
                 </button>
               </div>
@@ -146,6 +147,8 @@ const Navbar = () => {
                 >
                   CONTACT
                 </Link>
+
+                <ThemeSwitch />
               </div>
             </div>
           </aside>
