@@ -30,7 +30,7 @@ const ProjectDetails = ({ isOpen, onClose, projects , projectId, setProjectId}) 
       onRequestClose={onClose}
     >
       <div className="relative h-full flex gap-5">
-        <button className=" absolute top-2 right-2 z-10 p-1 bg-white rounded-full" onClick={onClose}>
+        <button className="lg:hidden absolute top-2 right-2 z-10 p-1 bg-white rounded-full" onClick={onClose}>
           <RxCross2 className="text-xl text-blue-700" />
         </button>
         <aside className="hidden lg:flex items-center cursor-pointer">
