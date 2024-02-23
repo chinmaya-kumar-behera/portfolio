@@ -28,8 +28,8 @@ const PhotoGallery = ({ photos }) => {
 
   return (
     <div>
-      <div className="relative h-[400px] w-full flex gap-10 rounded-md bg-gray-50 p-1">
-        <div className="relative h-full min-w-[170px] py-6">
+      <div className="relative h-[400px] w-full flex lg:gap-10 rounded-md p-3 border border-gray-300">
+        <div className="hidden lg:block relative h-full min-w-[170px] py-6">
           <div
             ref={imageContainerRef}
             className="h-full overflow-y-auto no-scrollbar space-y-2"
@@ -42,6 +42,7 @@ const PhotoGallery = ({ photos }) => {
                 <IoIosArrowUp className="text-2xl text-gray-800" />
               </button>
             </div>
+
             {photos.map((el, index) => (
               <div
                 key={index}
@@ -57,6 +58,7 @@ const PhotoGallery = ({ photos }) => {
                 />
               </div>
             ))}
+
             <div className="absolute -bottom-1 w-full flex justify-center items-center z-5">
               <button
                 className="flex items-center justify-center text-gray-500"
@@ -67,8 +69,27 @@ const PhotoGallery = ({ photos }) => {
             </div>
           </div>
         </div>
+
+        <div className="">
+          {photos.map((el, index) => (
+            <div
+              key={index}
+              className={`relative h-[90px] w-full ${
+                activeIndex === index ? "opacity-50" : ""
+              } cursor-pointer`}
+              onClick={() => handleImageClick(index)}
+            >
+              <Image
+                src={el}
+                className="object-cover object-center rounded"
+                fill={true}
+              />
+            </div>
+          ))}
+        </div>
+
         <div className="w-full h-full">
-          <div className="relative h-full w-full">
+          <div className="relative h-[310px] lg:h-full w-full">
             {photos.map((el, index) => (
               <Image
                 key={index}
@@ -78,6 +99,24 @@ const PhotoGallery = ({ photos }) => {
                 }`}
                 fill={true}
               />
+            ))}
+          </div>
+
+          <div className="lg:hidden flex justify-center gap-2 py-2">
+            {photos.map((el, index) => (
+              <div
+                key={index}
+                className={`relative h-[50px] w-[50px] ${
+                  activeIndex === index ? "opacity-50" : ""
+                } cursor-pointer`}
+                onClick={() => handleImageClick(index)}
+              >
+                <Image
+                  src={el}
+                  className="object-cover object-center rounded"
+                  fill={true}
+                />
+              </div>
             ))}
           </div>
         </div>

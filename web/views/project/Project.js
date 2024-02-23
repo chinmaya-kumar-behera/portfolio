@@ -1,16 +1,15 @@
 import { SectionHeading } from '@/components/shared';
-import { THEME_COLOR } from '@/constant/color.constant';
-import Image from 'next/image';
 import React, { useState } from 'react'
 import ProjectDetails from './components/ProjectDetails';
 import ProjectCard from './components/ProjectCard';
-
+import { ProjectLists } from './project.doc';
 
 const Project = () => {
-
   const [modal, setModal] = useState(false);
+  const [currentProjectId, setCurrentProjectId] = useState(null);
 
   const onProjectClick = (value) => {
+    setCurrentProjectId(value);
     setModal(true)
   };
 
@@ -21,23 +20,34 @@ const Project = () => {
       <div className="mt-10">
         <div className="">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3 lg:gap-6">
-            {Array.from([1, 2]).map((el, index) => (
-              <ProjectCard key={index} size={'lg'} />
+            {ProjectLists.map((el, index) => (
+              <ProjectCard
+                onClick={() => onProjectClick(el.id)}
+                key={index}
+                size={"lg"}
+                data={el}
+              />
             ))}
           </div>
         </div>
 
-        <div className="">
+        {/* <div className="">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6">
             {Array.from([1, 2, 3]).map((el, index) => (
               <ProjectCard key={index} />
             ))}
           </div>
-        </div>  
+        </div>   */}
       </div>
 
       {modal && (
-        <ProjectDetails isOpen={modal} onClose={() => setModal(false)} />
+        <ProjectDetails
+          isOpen={modal}
+          onClose={() => setModal(false)}
+          projects={ProjectLists}
+          projectId={currentProjectId}
+          setProject={setCurrentProjectId}
+        />
       )}
     </section>
   );
