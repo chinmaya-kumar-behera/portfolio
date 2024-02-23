@@ -45,6 +45,7 @@ const Navbar = () => {
         </span>
       </div>
 
+      {/* large screen */}
       <div className="py-5 hidden lg:flex items-center gap-10 text-gray-700 cursor-pointer font-barlow-semi-condensed">
         <Link href={"#about"} className="hover:text-blue-500 transition-all">
           ABOUT
@@ -100,7 +101,7 @@ const Navbar = () => {
             } h-screen bg-white overflow-y-auto`}
             style={{ zIndex: 100 }}
           >
-            <div className="">
+            <div className="text-blue-500">
               <div className="">
                 <button
                   className="p-2"
@@ -111,7 +112,7 @@ const Navbar = () => {
                 </button>
               </div>
 
-              <div className="flex flex-col gap-5 p-5">
+              <div className="flex flex-col gap-5 p-5 text-sm">
                 <Link
                   href={"#about"}
                   className="hover:text-blue-500 transition-all"
@@ -148,7 +149,7 @@ const Navbar = () => {
                   CONTACT
                 </Link>
 
-                <ThemeSwitch />
+                {/* <ThemeSwitch /> */}
               </div>
             </div>
           </aside>
