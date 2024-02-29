@@ -9,7 +9,7 @@ const ProjectCard = ({ onClick, data }) => {
       name="1"
       onClick={onClick}
     >
-      <div className={` w-full full`}>
+      <div className={``}>
         <img
           src={data.thumbnaiil.src}
           className="h-full w-full object-center object-cover rounded-md"

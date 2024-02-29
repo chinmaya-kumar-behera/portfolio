@@ -1,10 +1,16 @@
-import workersHiveThumbNail from "../../_asssets/images/projects/workers-hive/thumbnail.png"
 
+// WOrkers Hive
+import workersHiveThumbNail from "../../_asssets/images/projects/workers-hive/thumbnail.png"
 import demo from "../../_asssets/images/demo.jpg";
 import demo1 from "../../_asssets/images/demo1.jpeg";
 import demo2 from "../../_asssets/images/demo2.jpg";
 import demo3 from "../../_asssets/images/demo3.jpg";
 import workersHiveLogo from "../../_asssets/images/projects/workers-hive/logo.jpg"
+
+// for LaslesVPN Landing page
+import LaslesVPN_landingPage from "../../_asssets/images/projects/lasles-vpn/thumbnail.png";
+
+
 
 export const ProjectLists = [
   {
@@ -149,12 +155,12 @@ export const ProjectLists = [
     id: 3,
     projectTitle: "Lasles VPN",
     description: "A site to search AI tools",
-    thumbnaiil: workersHiveThumbNail,
+    thumbnaiil: LaslesVPN_landingPage,
     images: [
       {
         id: 1,
         src: demo,
-      },  
+      },
       {
         id: 2,
         src: demo1,
