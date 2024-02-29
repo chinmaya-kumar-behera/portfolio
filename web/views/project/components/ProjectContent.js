@@ -3,6 +3,7 @@ import { FaGithub } from 'react-icons/fa';
 import { PhotoGallery } from '@/components/shared';
 import Link from 'next/link';
 import Image from 'next/image';
+import Button from '@/components/UI/Button';
 
 const ProjectContent = ({ data }) => {
   return (
@@ -28,10 +29,13 @@ const ProjectContent = ({ data }) => {
           </div>
         </div>
         <div className="">
-          <button className="flex items-center gap-2 px-8 py-3 bg-blue-500 hover:bg-blue-400 transition-all text-white rounded-md">
+          {/* <button className="flex items-center gap-2 px-8 py-3 bg-blue-500 hover:bg-blue-400 transition-all text-white rounded-md">
+            
+          </button> */}
+          <Button className="flex items-center">
             <FaGithub className="text-xl" />
             <span>Get Source Code</span>
-          </button>
+          </Button>
         </div>
       </div>
       <div className="py-5">

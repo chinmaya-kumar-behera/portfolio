@@ -46,7 +46,7 @@ const Project = () => {
           onClose={() => setModal(false)}
           projects={ProjectLists}
           projectId={currentProjectId}
-          setProject={setCurrentProjectId}
+          setProjectId={setCurrentProjectId}
         />
       )}
     </section>

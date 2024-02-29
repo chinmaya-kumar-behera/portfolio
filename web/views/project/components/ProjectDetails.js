@@ -11,13 +11,22 @@ const ProjectDetails = ({ isOpen, onClose, projects , projectId, setProjectId}) 
     if (projectId) setData(projects.find((el) => el.id === projectId ));
   }, [projectId]);
 
+
+  const totalProjects = projects.length;
+
   const onNextArrow = () => {
-    console.log("next aarrow clicked")
-  }
+    if (projectId < totalProjects) {
+      setProjectId(projectId + 1);
+    }
+  };
 
   const onPrevArrow = () => {
-    console.log("On prev arrow click")
+    if (projectId > 0) {
+      setProjectId(projectId - 1);
+    }
   }
+
+  console.log(projectId)
 
   return (
     <Dialog
@@ -30,12 +39,15 @@ const ProjectDetails = ({ isOpen, onClose, projects , projectId, setProjectId}) 
       onRequestClose={onClose}
     >
       <div className="relative h-full flex gap-5">
-        <button className="lg:hidden absolute top-2 right-2 z-10 p-1 bg-white rounded-full" onClick={onClose}>
+        <button
+          className="lg:hidden absolute top-2 right-2 z-10 p-1 bg-white rounded-full "
+          onClick={onClose}
+        >
           <RxCross2 className="text-xl text-blue-700" />
         </button>
         <aside className="hidden lg:flex items-center cursor-pointer">
           <MdArrowBackIos
-            className="text-5xl text-white"
+            className={`text-5xl ${projectId > 0 ? 'text-white hover:scale-110' : 'text-gray-300 hover:cursor-no-drop'} transition-all`}
             onClick={onPrevArrow}
           />
         </aside>
@@ -46,7 +58,7 @@ const ProjectDetails = ({ isOpen, onClose, projects , projectId, setProjectId}) 
         </div>
         <aside className="hidden relative lg:flex items-center">
           <MdArrowForwardIos
-            className="text-5xl text-white"
+            className={`text-5xl ${projectId < totalProjects ? 'text-white hover:scale-110' : 'text-gray-300 hover:cursor-no-drop transition-all'}`}
             onClick={onNextArrow}
           />
           <div className="absolute top-10">
