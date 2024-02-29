@@ -1,11 +1,17 @@
 import { BUTTON } from '@/constant/button.constant';
+import classNames from 'classnames';
 import React from 'react'
 
-const Button = ({ className, children }) => {
-    console.log(BUTTON)
-  const style = "bg-gradient-to-r from-blue-400 to-blue-600 text-white " + className;
+const Button = ({ className, children, size = "md", rounded = "rounded", onClick }) => {
 
-  return <button className={style}>children</button>;
+  const defaultStyle = "bg-gradient-to-r from-blue-400 to-blue-600 text-white";
+  const styles = classNames(defaultStyle, className, BUTTON.SIZE[size], rounded);
+
+  return (
+    <button className={styles} onClick={onClick}>
+      {children}
+    </button>
+  );
 };
 
 export default Button

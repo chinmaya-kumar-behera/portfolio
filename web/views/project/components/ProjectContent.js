@@ -29,10 +29,7 @@ const ProjectContent = ({ data }) => {
           </div>
         </div>
         <div className="">
-          {/* <button className="flex items-center gap-2 px-8 py-3 bg-blue-500 hover:bg-blue-400 transition-all text-white rounded-md">
-            
-          </button> */}
-          <Button className="flex items-center">
+          <Button className="flex items-center gap-2" size='md' rounded="rounded-md" onClick={()=>alert("Got the Source code")}>
             <FaGithub className="text-xl" />
             <span>Get Source Code</span>
           </Button>
