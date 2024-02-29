@@ -5,6 +5,7 @@ import demo1 from "../../_asssets/images/demo1.jpeg";
 import demo2 from "../../_asssets/images/demo2.jpg";
 import demo3 from "../../_asssets/images/demo3.jpg";
 import workersHiveLogo from "../../_asssets/images/projects/workers-hive/logo.jpg"
+
 export const ProjectLists = [
   {
     id: 1,
@@ -29,7 +30,7 @@ export const ProjectLists = [
         src: demo3,
       },
     ],
-    topDesc: ` Paragraphs & Topic Sentences A paragraph is a series of sentences that are organized and coherent, and are all related to a single topic. Almost every piece of writing you do that is longer than a few sentences should be organized into paragraphs.`,
+    topDesc: `This is a comprehensive MERN stack Web Application providing on demand service at the customers doorstep. The services are in various fields like Electronics, plumbing etc. I have used the latest technology for building this app. `,
     workDetails: [
       {
         id: 1,
@@ -68,9 +69,10 @@ export const ProjectLists = [
         desc: "This is because paragraphs show a reader where the subdivisions of an essay begin and end, and thus help the reader see the organization of the essay and grasp its main points. Paragraphs can contain many different kinds of information. ",
       },
     ],
-    techStacks: ["React.js", "Next.js"],
+    techStacks: ["React.js", "Next.js", "Tailwinds CSS"],
     githubLink: "https:/github.com/chinmaya-kumar-behera",
     logo: workersHiveLogo,
+    isOpenSourse: false,
     websiteLink: "https://workers-hive.vercel.app/",
   },
 ];
