@@ -22,15 +22,15 @@ export default function Home() {
         <ScrollIndicator />
       </div>
 
-      {/* Social Links */}
-      <div
-        className="fixed right-2 bottom-6"
-        style={{ zIndex: SOCIAL_LINK_INDEX }}
-      >
-        <SocialLinks />
-      </div>
-
       <section className="relative mx-auto">
+        {/* Social Links */}
+        <div
+          className="fixed right-2 bottom-6"
+          style={{ zIndex: SOCIAL_LINK_INDEX }}
+        >
+          <SocialLinks />
+        </div>
+
         <div className="h-auto lg:h-screen bg-gradient-radial from-indigo-400 via-indigo-300 to-white">
           <PageContainer className="px-2 lg:px-0 h-full flex flex-col justify-between">
             <Navbar />
