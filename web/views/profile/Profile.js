@@ -74,7 +74,7 @@ const Profile = () => {
                   sequence={[1000, "Chinmaya Kumar"]}
                   wrapper="span"
                   speed={5}
-                  className="text-4xl font-extrabold font-playfair"
+                  className="text-3xl font-extrabold font-playfair"
                   repeat={1}
                   cursor={false}
                 />
