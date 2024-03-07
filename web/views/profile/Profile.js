@@ -54,10 +54,10 @@ const Profile = () => {
       </div>
 
       {/* mobile screen it will be visible */}
-      <div className="lg:hidden h-[60vh] relative my-10 p-5 rounded-3xl md:flex justify-between">
-        <div className="z-10">
-          <div className="w-full lg:flex flex-col justify-center gap-8">
-            <div className="space-y-4 text-md text-gray-500 h-[40px]">
+      <div className="lg:hidden h-auto relative rounded-3xl md:flex justify-center mt-10">
+        <div className="z-10 flex justify-center">
+          <div className="w-[300px] lg:flex pt-5 px-5 flex-col justify-center items-center gap-8">
+            <div className="space-y-4 text-md text-gray-500 h-[40px] text-center">
               <TypeAnimation
                 sequence={["HELLO, MY NAME IS"]}
                 wrapper="span"
@@ -90,13 +90,13 @@ const Profile = () => {
           </div>
         </div>
 
-        <div className="flex justify-end z-0 mt-5 lg:mt-0">
+        <div className="flex justify-center z-0 mt-5 lg:mt-0">
           <div className="block h-[300px] md:h-[500px] w-[300px] md:w-[500px] overflow-hidden">
             <img
               // src="https://websitedemos.net/portfolio-02/wp-content/uploads/sites/864/2021/05/about-01-free-img.jpg"
               src="https://10web-site.ai/17/wp-content/uploads/sites/19/2024/02/MAIN_NiOAKptj.webp"
               alt="profile_image"
-              className="object-cover object-center"
+              className="object-cover object-center h-full w-full"
             />
           </div>
         </div>

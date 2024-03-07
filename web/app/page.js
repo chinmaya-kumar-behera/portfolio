@@ -9,10 +9,7 @@ import Project from "@/views/project";
 import Profile from "@/views/profile";
 import Contact from "@/views/contact";
 import ScrollIndicator from "@/components/ScrollIndicator";
-import {
-  SCROLL_INDICATOR_INDEX,
-  SOCIAL_LINK_INDEX,
-} from "@/constant/zIndex.constant";
+import { SCROLL_INDICATOR_INDEX, SOCIAL_LINK_INDEX } from "@/constant/zIndex.constant";
 
 export default function Home() {
   return (
@@ -34,10 +31,29 @@ export default function Home() {
       </div>
 
       <section className="relative mx-auto">
-        <div className="h-screen bg-gradient-radial from-indigo-400 via-indigo-300 to-white">
+        <div className="h-auto lg:h-screen bg-gradient-radial from-indigo-400 via-indigo-300 to-white">
           <PageContainer className="px-2 lg:px-0 h-full flex flex-col justify-between">
             <Navbar />
             <Profile />
+          </PageContainer>
+        </div>
+
+        <div className="bg-black py-10">
+          <PageContainer>
+            <div className="flex gap-10">
+              <div className="">
+                <img
+                  src={`${"https://10web-site.ai/17/wp-content/uploads/sites/19/2024/02/logoipsum-327_NiOAKptj.webp"}`}
+                  className="h-[100px] w-[100px]"
+                />
+              </div>
+              <div className="text-white  bg-gray-600 p-3 rounded-xl bg-opacity-30 space-y-2">
+                <h2 className="font-bold text-2xl">
+                  YCY CLASS EDUTECH PVT LTD
+                </h2>
+                <p>1 Years Experience</p>
+              </div>
+            </div>
           </PageContainer>
         </div>
 
