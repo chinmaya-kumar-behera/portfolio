@@ -40,7 +40,7 @@ export default function Home() {
 
         <div className="bg-black py-10">
           <PageContainer>
-            <div className="flex gap-10">
+            <div className="flex gap-5 lg:gap-10 px-2 lg:px-0">
               <div className="">
                 <img
                   src={`${"https://10web-site.ai/17/wp-content/uploads/sites/19/2024/02/logoipsum-327_NiOAKptj.webp"}`}
@@ -48,7 +48,7 @@ export default function Home() {
                 />
               </div>
               <div className="text-white  bg-gray-600 p-3 rounded-xl bg-opacity-30 space-y-2">
-                <h2 className="font-bold text-2xl">
+                <h2 className="font-bold text-xl lg:text-2xl">
                   YCY CLASS EDUTECH PVT LTD
                 </h2>
                 <p>1 Years Experience</p>
