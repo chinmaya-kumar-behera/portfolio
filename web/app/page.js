@@ -37,6 +37,7 @@ export default function Home() {
           </PageContainer>
         </div>
 
+        {/* work experience */}
         <div className="bg-black py-10">
           <PageContainer>
             <div className="flex justify-center lg:justify-start gap-2 md:gap-5 lg:gap-10 px-2 lg:px-0">
@@ -56,23 +57,19 @@ export default function Home() {
           </PageContainer>
         </div>
 
+        {/* about me section */}
+        <AboutMe />
+
         <PageContainer className="px-2 lg:px-0">
-          <div className="py-10 lg:py-20 mt-28 lg:mt-0">
-            <AboutMe />
-          </div>
-
-          <div className="py-20">
-            <Skills />
-          </div>
-
           <div className="py-5 lg:py-10">
             <Experience />
           </div>
-
-          <div className="py-10">
-            <Project />
-          </div>
         </PageContainer>
+
+        <Skills />
+        <div className="py-10">
+          <Project />
+        </div>
       </section>
 
       {/* <section className="bg-gray-200 relative mx-auto">

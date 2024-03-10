@@ -10,7 +10,7 @@
     width: 100%;
     min-width: 354px;
     font-family: roboto, sans-serif;
-    background-color: #F3F7FE;
+    /* background-color: #F3F7FE; */
     scroll-behavior: smooth;
   }
 }
