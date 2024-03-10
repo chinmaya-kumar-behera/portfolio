@@ -57,7 +57,7 @@ const Profile = () => {
       <div className="lg:hidden h-auto relative rounded-3xl md:flex justify-center mt-10">
         <div className="z-10 flex justify-center">
           <div className="w-[300px] lg:flex pt-5 px-5 flex-col justify-center items-center gap-8">
-            <div className="space-y-4 text-md text-gray-500 h-[40px] text-center">
+            <div className="space-y-4 text-sm sm:text-md text-gray-500 h-[50px] text-center">
               <TypeAnimation
                 sequence={["HELLO, MY NAME IS"]}
                 wrapper="span"
@@ -65,7 +65,9 @@ const Profile = () => {
                 repeat={1}
                 cursor={true}
               />
-              <div className="h-[2px] bg-gray-400 w-8 rounded"></div>
+              <div className="flex justify-center">
+                <div className="h-[2px] bg-gray-400 w-8 rounded"></div>
+              </div>
             </div>
 
             <div className="mt-4 space-y-2 font-serif text-center">

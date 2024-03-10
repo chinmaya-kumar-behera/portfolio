@@ -13,7 +13,7 @@ import { SCROLL_INDICATOR_INDEX, SOCIAL_LINK_INDEX } from "@/constant/zIndex.con
 
 export default function Home() {
   return (
-    <main className="">
+    <main className="relative">
       {/* scroll indicator */}
       <div
         className="absolute top-0 w-full"
@@ -23,13 +23,12 @@ export default function Home() {
       </div>
 
       <section className="relative mx-auto">
-        {/* Social Links */}
-        {/* <div
+        <div
           className="fixed right-2 bottom-6"
           style={{ zIndex: SOCIAL_LINK_INDEX }}
         >
           <SocialLinks />
-        </div> */}
+        </div>
 
         <div className="h-auto lg:h-screen bg-gradient-radial from-indigo-400 via-indigo-300 to-white">
           <PageContainer className="px-2 lg:px-0 h-full flex flex-col justify-between">
@@ -38,24 +37,24 @@ export default function Home() {
           </PageContainer>
         </div>
 
-        {/* <div className="bg-black py-10">
+        <div className="bg-black py-10">
           <PageContainer>
-            <div className="flex gap-5 lg:gap-10 px-2 lg:px-0">
+            <div className="flex justify-center lg:justify-start gap-2 md:gap-5 lg:gap-10 px-2 lg:px-0">
               <div className="">
                 <img
                   src={`${"https://10web-site.ai/17/wp-content/uploads/sites/19/2024/02/logoipsum-327_NiOAKptj.webp"}`}
-                  className="h-[100px] w-[100px]"
+                  className="h-[60px] md:h-[100px] w-[60px] md:w-[100px]"
                 />
               </div>
-              <div className="text-white  bg-gray-600 p-3 rounded-xl bg-opacity-30 space-y-2">
-                <h2 className="font-bold text-xl lg:text-2xl">
+              <div className="text-white  bg-gray-600 p-2 md:p-3 rounded-xl bg-opacity-30 space-y-2">
+                <h2 className="font-bold text-sm md:text-2xl">
                   YCY CLASS EDUTECH PVT LTD
                 </h2>
                 <p>1 Years Experience</p>
               </div>
             </div>
           </PageContainer>
-        </div> */}
+        </div>
 
         <PageContainer className="px-2 lg:px-0">
           <div className="py-10 lg:py-20 mt-28 lg:mt-0">
@@ -76,13 +75,13 @@ export default function Home() {
         </PageContainer>
       </section>
 
-      <section className="bg-gray-200">
+      {/* <section className="bg-gray-200 relative mx-auto">
         <PageContainer>
           <div className="py-20">
             <Contact />
           </div>
         </PageContainer>
-      </section>
+      </section> */}
 
       <footer className="text-center text-sm py-2">@copyright</footer>
     </main>
