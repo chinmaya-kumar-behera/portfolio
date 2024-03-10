@@ -92,11 +92,10 @@ const Skills = () => {
         desc: "Designed and developed front-end interfaces for web applications with React.js, ensuring optimal performance and usability",
       },
     ];
-  // const skillStyle = `w-[150px] md:w-[250px] h-[150px] md:h-[250px] flex justify-center items-center text-center bg-gray-200 rounded-lg hover:scale-105 transition-all duration-500 hover:bg-gray-100 hover:text-[${THEME_COLOR}]`;
    const skillStyle = `relative w-full md:max-w-[300px] p-7 space-y-4 bg-gray-100 border border-white hover:border-blue-500`;
 
   return (
-    <main id="about" className="">
+    <main id="about" className="py-10">
       <PageContainer className={"px-4 lg:px-0 py-5 lg:py-0"}>
         <div className="flex flex-col lg:flex-row py-10 lg:py-20 gap-10 lg:gap-20">
           <div className="w-full lg:w-1/2 flex flex-col font-bold text-3xl lg:text-5xl">

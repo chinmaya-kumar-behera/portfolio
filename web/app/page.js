@@ -65,11 +65,11 @@ export default function Home() {
             <Experience />
           </div>
         </PageContainer>
-
+    
         <Skills />
-        <div className="py-10">
-          <Project />
-        </div>
+
+        <Project />
+        <Skills />
       </section>
 
       {/* <section className="bg-gray-200 relative mx-auto">
