@@ -8,8 +8,17 @@ import { SectionHeading } from "@/components/shared";
 import { THEME_COLOR } from "@/constant/color.constant";
 
 const Experience = () => {
+  const projectDetails = [
+    "Assisted with creating highly interactive and reusable web components using the JavaScript library React.js.",
+    "Proficiency in frameworks including Tailwind CSS, Material Tailwind, and Material UI for streamlined web development.",
+    "Utilized Recoil for state management in React, enabling efficient and scalable management of application state.",
+    "Applied Node.js utility library Express to facilitate streamlined server-side operations.",
+    "Proficient in designing and implementing RESTful APIs to ensure robust communication between clients and servers.",
+    "Implemented caching techniques to improve backend performance by efficiently storing and fetching user data, resulting in fewer database queries and faster system responsiveness.",
+    "Utilized Mongoose for writing CRUD operations, facilitating seamless data retrieval and updating in MongoDB databases.",
+  ];
   return (
-    <section id="experience" className="relative w-full lg:space-y-5">
+    <section className="relative w-full lg:space-y-5">
       <SectionHeading heading={"Experience"} />
 
       <div className="flex flex-col gap-5 lg:gap-0 lg:flex-row py-10">
@@ -30,21 +39,11 @@ const Experience = () => {
                 </h3>
 
                 <div className="pr-10">
-                  <p className="font-playfair">
-                    hello sir i am chinmaya kumar behera going to kill ravana
-                    and i want to tell you regarding hello sir i am chinmaya
-                    kumar behera going to kill ravana and i want to tell you
-                    regarding hello sir i am chinmaya kumar behera going to kill
-                    ravana and i want to tell you regarding hello sir i am
-                    chinmaya kumar behera going to kill ravana and i want to
-                    tell you regarding hello sir i am chinmaya kumar behera
-                    going to kill ravana i want to tell you regarding hello sir
-                    i am chinmaya kumar behera going to kill ravana and i want
-                    to tell you regarding hello sir i am chinmaya kumar behera
-                    going to kill ravana and i want to tell you regarding hello
-                    sir i am chinmaya kumar behera going to kill ravana and i
-                    want to tell you regarding
-                  </p>
+                  <ul className="space-y-1 list-disc">
+                    {projectDetails.map((el) => (
+                      <li className="text-sm decoration-black">{el}</li>
+                    ))}
+                  </ul>
                 </div>
 
                 <div className="lg:hidden w-full lg:w-1/3 px-5 py-2">

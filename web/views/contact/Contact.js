@@ -47,9 +47,9 @@ const Contact = () => {
       <div className="space-y-5">
         <div className="space-y-5">
           <div className="text-center">
-            <h1 className="text-3xl lg:text-6xl font-bold font-playfair">
+            {/* <h1 className="text-3xl lg:text-6xl font-bold font-playfair">
               Contact Me
-            </h1>
+            </h1> */}
           </div>
           <div className="">
             <div className="flex items-center gap-3 py-2">

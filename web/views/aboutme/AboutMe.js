@@ -13,7 +13,8 @@ const AboutMe = () => {
         <div className="">
           <div className="px-2 lg:px-0 flex flex-col py-10 lg:py-20 text-center font-bold text-3xl lg:text-5xl font-barlow-semi-condensed space-y-2">
             <h1 className="">
-              Collaborate with Me to Build Your Dream <br className="hidden lg:block"/>
+              Collaborate with Me to Build Your Dream{" "}
+              <br className="hidden lg:block" />
               Website
             </h1>
             <h1></h1>
@@ -32,11 +33,12 @@ const AboutMe = () => {
               Delivering Custom Web Solutions with Cutting-Edge Technologies
             </div>
             <div className="">
-              With my full-stack development expertise, I create customized web
-              solutions tailored to your specific needs. My work spans across
-              the latest technologies, including React.js, Node.js, Express, and
-              Next.js. Whatever your vision, I can bring it to life with
-              seamless functionality and visual appeal.
+              I have a lot of experience building websites from start to finish.
+              I focus on making each website unique and tailored to your needs.
+              I use the newest technologies like React.js, Node.js, Express, and
+              Next.js to make sure your website is modern and works great.
+              Whether it's a fun interactive web app or a beautiful website, I
+              make sure everything works smoothly and looks great.
             </div>
             <div className="">
               <Accordion
@@ -49,9 +51,9 @@ const AboutMe = () => {
                 }
               >
                 <div className="py-2">
-                  My vision is to create a digital world where every business
-                  has a unique, engaging, and user-friendly online presence that
-                  facilitates growth and success.
+                  To revolutionize the digital landscape by creating innovative
+                  and impactful web solutions that empower businesses and
+                  individuals alike.
                 </div>
               </Accordion>
               <Accordion
@@ -64,9 +66,10 @@ const AboutMe = () => {
                 }
               >
                 <div className="py-2">
-                  My mission is to empower businesses with the latest digital
-                  technologies, creating user-centric web experiences that are
-                  functional, reliable, and aesthetically pleasing.
+                  To consistently deliver exceptional web experiences by
+                  combining creativity, expertise, and cutting-edge
+                  technologies, ultimately driving success and satisfaction for
+                  my clients.
                 </div>
               </Accordion>
             </div>

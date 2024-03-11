@@ -1,5 +1,5 @@
 "use client";
-import { PageContainer } from "@/components/shared";
+import { ContactButton, PageContainer } from "@/components/shared";
 import Navbar from "@/views/header";
 import AboutMe from "@/views/aboutme/AboutMe";
 import Skills from "@/views/skill";
@@ -9,7 +9,10 @@ import Project from "@/views/project";
 import Profile from "@/views/profile";
 import Contact from "@/views/contact";
 import ScrollIndicator from "@/components/ScrollIndicator";
-import { SCROLL_INDICATOR_INDEX, SOCIAL_LINK_INDEX } from "@/constant/zIndex.constant";
+import {
+  SCROLL_INDICATOR_INDEX,
+  SOCIAL_LINK_INDEX,
+} from "@/constant/zIndex.constant";
 
 export default function Home() {
   return (
@@ -57,30 +60,38 @@ export default function Home() {
           </PageContainer>
         </div>
 
-        {/* about me section */}
         <AboutMe />
 
         <PageContainer className="px-2 lg:px-0">
-          <div className="py-5 lg:py-10">
+          <div className="py-5 lg:py-10" id="experience">
             <Experience />
           </div>
         </PageContainer>
-    
+
         <Skills />
 
         <Project />
         <Skills />
       </section>
 
-      {/* <section className="bg-gray-200 relative mx-auto">
+
+      <section className="bg-gray-200 relative mx-auto">
         <PageContainer>
+          <div className="space-y-5 py-10 lg:py-20">
+            <div className="w-full text-center font-bold text-3xl lg:text-4xl">
+              <h1 className="">
+                Let's Collaborate to Create Your Dream Website
+              </h1>
+            </div>
+            <div className="text-center">
+              <ContactButton className={"px-7 py-3"} />
+            </div>
+          </div>
           <div className="py-20">
             <Contact />
           </div>
         </PageContainer>
-      </section> */}
-
-      <footer className="text-center text-sm py-2">@copyright</footer>
+      </section>
     </main>
   );
 }

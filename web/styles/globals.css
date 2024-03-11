@@ -45,6 +45,10 @@
   @apply top-4 right-2 cursor-pointer text-lg text-gray-500 hover:text-black absolute;
 }
 
+html, body {
+  scroll-behavior: smooth;
+}
+
 :root {
   --duration: 3s;
   --easing: linear;
@@ -67,12 +71,12 @@ html::-webkit-scrollbar-track {
 
 html::-webkit-scrollbar-thumb {
   border-radius: 8px;
-  background-color: #ff592bbf;
+  background-color: blue;
 }
 
 .custom-scrollbar {
   scrollbar-width: thin;
-  scrollbar-color: #ff592bbf #e7e7e7;
+  scrollbar-color: blue;
 }
 
 .custom-scrollbar::-webkit-scrollbar {
@@ -92,6 +96,15 @@ html::-webkit-scrollbar-thumb {
 .custom-scrollbar::-webkit-scrollbar-thumb {
   border-radius: 8px;
   background-color: #ff592bbf;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 .container {
