@@ -71,11 +71,9 @@ export default function Home() {
         <Skills />
 
         <Project />
-        <Skills />
       </section>
 
-
-      <section className="bg-gray-200 relative mx-auto">
+      <section className="bg-gray-200 relative mx-auto mt-10">
         <PageContainer>
           <div className="space-y-5 py-10 lg:py-20">
             <div className="w-full text-center font-bold text-3xl lg:text-4xl">
@@ -87,11 +85,12 @@ export default function Home() {
               <ContactButton className={"px-7 py-3"} />
             </div>
           </div>
-          <div className="py-20">
-            <Contact />
-          </div>
         </PageContainer>
       </section>
+
+      <PageContainer>
+        <div className="py-10 lg:py-20"><Contact /></div>
+      </PageContainer>
     </main>
   );
 }

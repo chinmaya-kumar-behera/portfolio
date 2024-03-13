@@ -43,7 +43,7 @@ const Contact = () => {
   };
   
   return (
-    <section id="contact" className="space-y-10 px-2 lg:px-0">
+    <section id="contact" className="w-full space-y-10 px-2 lg:px-0">
       <div className="space-y-5">
         <div className="space-y-5">
           <div className="text-center">
@@ -71,8 +71,9 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <div className="space-y-2 font-barlow-semi-condensed text-sm lg:text-lg ">
-          <div className="flex items-center gap-2 relative w-fit group cursor-pointer">
+        
+        <div className="space-y-2 font-barlow-semi-condensed text-sm lg:text-lg max-w-[200px]">
+          <div className="flex items-center gap-2 relative group cursor-pointer">
             <span
               className="p-1.5 rounded-full"
               style={{ backgroundColor: THEME_COLOR }}
@@ -84,7 +85,7 @@ const Contact = () => {
             </span>
             <CopyButton onClick={onMailButtonClick} text={text} />
           </div>
-          <div className="flex items-center gap-2 relative w-fit group">
+          <div className="flex items-center gap-2 relative group">
             <span
               className="p-1.5 rounded-full"
               style={{ backgroundColor: THEME_COLOR }}
