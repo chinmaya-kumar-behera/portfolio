@@ -44,17 +44,8 @@ export default function Home() {
         <div className="bg-black py-10">
           <PageContainer>
             <div className="flex justify-center lg:justify-start gap-2 md:gap-5 lg:gap-10 px-2 lg:px-0">
-              <div className="">
-                <img
-                  src={`${"https://10web-site.ai/17/wp-content/uploads/sites/19/2024/02/logoipsum-327_NiOAKptj.webp"}`}
-                  className="h-[60px] md:h-[100px] w-[60px] md:w-[100px]"
-                />
-              </div>
-              <div className="text-white  bg-gray-600 p-2 md:p-3 rounded-xl bg-opacity-30 space-y-2">
-                <h2 className="font-bold text-sm md:text-2xl">
-                  YCY CLASS EDUTECH PVT LTD
-                </h2>
-                <p>1 Years Experience</p>
+                <div className="text-gray-100">
+                <Experience />
               </div>
             </div>
           </PageContainer>
@@ -62,18 +53,16 @@ export default function Home() {
 
         <AboutMe />
 
-        <PageContainer className="px-2 lg:px-0">
+        {/* <PageContainer className="px-2 lg:px-0">
           <div className="py-5 lg:py-10" id="experience">
             <Experience />
           </div>
-        </PageContainer>
-
+        </PageContainer> */}
         <Skills />
-
         <Project />
       </section>
 
-      {/* <section className="bg-gray-200 relative mx-auto mt-10">
+      <section className="bg-gray-200 relative mx-auto mt-10">
         <PageContainer>
           <div className="space-y-5 py-10 lg:py-20">
             <div className="w-full text-center font-bold text-3xl lg:text-4xl">
@@ -86,11 +75,13 @@ export default function Home() {
             </div>
           </div>
         </PageContainer>
-      </section> */}
+      </section>
 
-      <PageContainer>
-        <div className="py-10 lg:py-20"><Contact /></div>
-      </PageContainer>
+      {/* <PageContainer>
+        <div className="py-10 lg:py-20">
+          <Contact />
+        </div>
+      </PageContainer> */}
     </main>
   );
 }

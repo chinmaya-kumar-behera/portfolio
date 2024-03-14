@@ -215,7 +215,7 @@ const Project = () => {
         </div>
       </PageContainer>
 
-      <div className="w-full flex justify-center p-1 lg:p-0">
+      <div className="w-full flex justify-center p-2 lg:p-0">
         <div
           className={` ${
             !scale ? "scale-100" : "scale-100"

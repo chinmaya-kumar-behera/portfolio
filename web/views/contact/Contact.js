@@ -72,7 +72,7 @@ const Contact = () => {
           </div>
         </div>
         
-        <div className="space-y-2 font-barlow-semi-condensed text-sm lg:text-lg max-w-[200px]">
+        <div className="space-y-2 font-barlow-semi-condensed text-sm lg:text-lg max-w-[2  00px]">
           <div className="flex items-center gap-2 relative group cursor-pointer">
             <span
               className="p-1.5 rounded-full"
