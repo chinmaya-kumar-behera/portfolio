@@ -73,12 +73,12 @@ export default function Home() {
         <Project />
       </section>
 
-      <section className="bg-gray-200 relative mx-auto mt-10">
+      {/* <section className="bg-gray-200 relative mx-auto mt-10">
         <PageContainer>
           <div className="space-y-5 py-10 lg:py-20">
             <div className="w-full text-center font-bold text-3xl lg:text-4xl">
               <h1 className="">
-                Let's Collaborate to Create Your Dream Website
+                Lets Collaborate to Create Your Dream Website
               </h1>
             </div>
             <div className="text-center">
@@ -86,7 +86,7 @@ export default function Home() {
             </div>
           </div>
         </PageContainer>
-      </section>
+      </section> */}
 
       <PageContainer>
         <div className="py-10 lg:py-20"><Contact /></div>
