@@ -90,7 +90,7 @@ const Skills = () => {
       {
         name: "Git",
         logo: git,
-        desc: "Strong version control skills using Git/GitHub. Proficient in branching, merging, and resolving conflicts. Experience in collaborative development and managing repositories.",
+        desc: "Strong version control skills using Gitea, GitLab and GitHub. Proficient in branching, merging, resolving conflicts and raising PR. Experience in collaborative development and managing repositories.",
       },
     ];
    const skillStyle = `relative w-full md:max-w-[300px] p-7 space-y-4 bg-gray-100 border border-white hover:border-blue-500`;

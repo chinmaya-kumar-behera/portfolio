@@ -21,6 +21,22 @@ const Experience = () => {
       "Utilized <strong>Mongoose</strong> for writing CRUD operations, facilitating seamless data retrieval and updating in MongoDB databases.",
     ],
   };
+
+
+  const ImageComp = (
+    <div className="relative h-full w-full rounded">
+      <a href="https://learnduke.com">
+        <Image
+          className="object-cover object-center hover:scale-105 transition-all duration-500"
+          alt="Project_image"
+          src={learnDukeImage}
+          fill={true}
+        />
+      </a>
+    </div>
+  );
+
+
   return (
     <section className="relative w-full lg:space-y-5">
       <SectionHeading heading={"Experience"} />
@@ -58,11 +74,23 @@ const Experience = () => {
 
           {/* ---- */}
           <div className="w-full lg:w-2/5 px-5 py-2 flex items-center">
-            <div className="relative h-[450px] bg-gray-100 bg-opacity-15 w-full rounded">
-              <div className="w-[50%] h-[50%] bg-red-500">
-
+            <div className="relative h-[450px] space-y-3  bg-opacity-15 w-full rounded ">
+              <div className="h-1/2 w-full flex justify-end items-end gap-3">
+                <div className="relative w-[15%] h-[20%] bg-blue-300">{ImageComp}</div>
+                <div className="relative w-[25%] h-[90%] bg-blue-300">{ImageComp}</div>
+                <div className="w-[45%] h-full flex flex-col gap-3">
+                  <div className="w-full h-[50%] flex gap-3">
+                    <div className="relative w-[50%] h-full bg-blue-300">{ImageComp}</div>
+                  </div>
+                  <div className="relative w-full h-[50%] bg-blue-300">{ImageComp}</div>
+                </div>
               </div>
-              
+              <div className="h-1/2 w-full flex justify-start items-start gap-3">
+                <div className="relative w-[40%] h-[60%] bg-blue-300">{ImageComp}</div>
+                <div className="relative w-[30%] h-[90%] bg-blue-300">{ImageComp}</div>
+                <div className="relative w-[20%] h-[50%] bg-blue-300">{ImageComp}</div>
+              </div>
+
               {/* <div className="relative h-full w-full rounded">
                 <a href="https://learnduke.com">
                   <Image
@@ -73,7 +101,6 @@ const Experience = () => {
                   />
                 </a>
               </div> */}
-
             </div>
           </div>
           {/* --- */}
