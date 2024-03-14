@@ -98,11 +98,11 @@ const Skills = () => {
   return (
     <main id="skills" className="py-10">
       <PageContainer className={"px-4 lg:px-0 py-5 lg:py-0"}>
-        <div className="flex flex-col lg:flex-row py-10 lg:py-20 gap-10 lg:gap-20">
-          <div className="w-full lg:w-1/2 flex flex-col font-bold text-3xl lg:text-5xl">
+        <div className="py-10 lg:py-20 space-y-5 text-center">
+          <div className="w-full font-bold text-3xl lg:text-5xl">
             <h1 className="">Expertise That Drives Results</h1>
           </div>
-          <div className="w-full lg:w-1/2">
+          <div className="w-full max-w-4xl mx-auto">
             <p>
               My expertise in full-stack development, React.js, and Node.js
               ensures that I deliver the results you're looking for on your

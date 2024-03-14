@@ -203,14 +203,16 @@ const Project = () => {
   return (
     <main id="projects" className="min-h-screen space-y-3">
       <PageContainer className={"px-4 lg:px-0 py-5 lg:py-0"}>
-        <div className="flex flex-col lg:flex-row py-10 lg:py-20 gap-10 lg:gap-20">
-          <div className="w-full lg:w-1/2 flex flex-col font-bold text-3xl lg:text-5xl">
+        <div className="w-full text-center py-10 space-y-5">
+          <div className="w-full  font-bold text-3xl lg:text-5xl">
             <h1 className="">Some of My Notable Projects</h1>
           </div>
-          <div className="w-full lg:w-1/2">
-            One of my standout achievements includes developing a custom web
-            application for a fintech startup that enabled real-time transaction
-            tracking, ensuring efficient and secure operations.
+          <div className="max-w-xl mx-auto">
+            <p>
+              One of my standout achievements includes developing a custom web
+              application for a fintech startup that enabled real-time
+              transaction tracking, ensuring efficient and secure operations.
+            </p>
           </div>
         </div>
       </PageContainer>
@@ -229,7 +231,7 @@ const Project = () => {
             >
               <IoIosArrowBack className="text-blue-300 group-hover:text-blue-500 text-2xl" />
             </button>
-            <button 
+            <button
               className="hidden md:block p-2 z-0 rounded-full group backdrop-filter backdrop-blur bg-opacity-50 transition-all text-shadow disabled:cursor-no-drop"
               onClick={onLeftArrowClick}
               disabled={projectId === 1}

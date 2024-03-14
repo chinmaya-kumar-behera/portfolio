@@ -73,8 +73,8 @@ const Experience = () => {
           </div>
 
           {/* ---- */}
-          <div className="w-full lg:w-2/5 px-5 py-2 flex items-center">
-            <div className="relative h-[450px] space-y-3  bg-opacity-15 w-full rounded ">
+          <div className="w-full lg:w-2/5 px-0 lg:px-5 py-2 flex items-center">
+            <div className="relative h-[300px] md:[400px] lg:h-[450px] space-y-3 w-full rounded ">
               <div className="h-1/2 w-full flex justify-end items-end gap-3">
                 <div className="relative w-[15%] h-[20%] bg-blue-300">{ImageComp}</div>
                 <div className="relative w-[25%] h-[90%] bg-blue-300">{ImageComp}</div>
