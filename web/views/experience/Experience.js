@@ -40,8 +40,8 @@ const Experience = () => {
 
                 <div className="pr-10">
                   <ul className="space-y-1 list-disc">
-                    {projectDetails.map((el) => (
-                      <li className="text-sm decoration-black">{el}</li>
+                    {projectDetails.map((el,ind) => (
+                      <li key={ind} className="text-sm decoration-black">{el}</li>
                     ))}
                   </ul>
                 </div>
