@@ -140,10 +140,6 @@ export const ProjectLists = [
         id: 3,
         desc: "Worked with browsers localstorage for storing bookmarked items.",
       },
-      {
-        id: 4,
-        desc: "Worked with browsers localstorage for storing bookmarked items.",
-      },
     ],
     techStacks: [
       { name: "HTML", logo: html },

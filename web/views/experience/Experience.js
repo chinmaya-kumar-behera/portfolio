@@ -3,24 +3,26 @@ import GlowDot from "./components/GlowDot";
 import YearBox from "./components/YearBox";
 import VerticalLine from "./components/VerticalLine";
 import Image from "next/image";
-import learnDukeImage from "../../_asssets/images/learnduke-image.png"
+import learnDukeImage from "../../_asssets/images/learnduke-image.png";
 import { SectionHeading } from "@/components/shared";
+import { Exp, LD_Photos } from "./exp.doc";
+
+const EXPImage = ({ img }) => {
+  return (
+    <div className="relative h-full w-full rounded">
+      <a href="https://learnduke.com">
+        <Image
+          className="h-full w-full object-cover object-center hover:scale-105 transition-all duration-500"
+          alt="Project_image"
+          src={img.src}
+          fill={true}
+        />
+      </a>
+    </div>
+  );
+};
 
 const Experience = () => {
-  const Exp = {
-    role: "Web Full Stack Developer", 
-    description: [
-      "Assisted with creating highly interactive and reusable web components using the JavaScript library <strong>React.js</strong>.",
-      "Proficiency in frameworks including <strong>Tailwind CSS</strong>, <strong>Material Tailwind</strong>, and <strong>Material UI</strong> for streamlined web development.",
-      "Utilized <strong>Recoil</strong> for state management in React, enabling efficient and scalable management of application state.",
-      "Applied <strong>Node.js</strong> utility library Express to facilitate streamlined server-side operations.",
-      "Proficient in designing and implementing <strong>RESTful APIs</strong> to ensure robust communication between clients and servers.",
-      "Implemented <strong>caching</strong> techniques to improve backend performance by efficiently storing and fetching user data, resulting in fewer database queries and faster system responsiveness.",
-      "Utilized <strong>Mongoose</strong> for writing CRUD operations, facilitating seamless data retrieval and updating in MongoDB databases.",
-    ],
-  };
-
-
   const ImageComp = (
     <div className="relative h-full w-full rounded">
       <a href="https://learnduke.com">
@@ -69,36 +71,36 @@ const Experience = () => {
             </div>
           </div>
 
-          {/* ---- */}
+          {/* --Image section -- */}
           <div className="w-full lg:w-2/5 px-0 lg:px-5 py-2 flex items-center">
             <div className="relative h-[300px] md:[400px] lg:h-[450px] space-y-3 w-full rounded ">
               <div className="h-1/2 w-full flex justify-end items-end gap-3">
                 <div className="relative w-[15%] h-[20%] bg-blue-300">
-                  {ImageComp}
+                  <EXPImage img={LD_Photos.seven} />
                 </div>
-                <div className="relative w-[25%] h-[90%] bg-blue-300">
-                  {ImageComp}
+                <div className="relative w-[25%] h-[70%] bg-blue-300">
+                  <EXPImage img={LD_Photos.nine} />
                 </div>
                 <div className="w-[45%] h-full flex flex-col gap-3">
                   <div className="w-full h-[50%] flex gap-3">
                     <div className="relative w-[50%] h-full bg-blue-300">
-                      {ImageComp}
+                      <EXPImage img={LD_Photos.eight} />
                     </div>
                   </div>
                   <div className="relative w-full h-[50%] bg-blue-300">
-                    {ImageComp}
+                    <EXPImage img={LD_Photos.one} />
                   </div>
                 </div>
               </div>
               <div className="h-1/2 w-full flex justify-start items-start gap-3">
                 <div className="relative w-[40%] h-[60%] bg-blue-300">
-                  {ImageComp}
+                  <EXPImage img={LD_Photos.two} />
                 </div>
                 <div className="relative w-[30%] h-[90%] bg-blue-300">
-                  {ImageComp}
+                  <EXPImage img={LD_Photos.three} />
                 </div>
                 <div className="relative w-[20%] h-[50%] bg-blue-300">
-                  {ImageComp}
+                  <EXPImage img={LD_Photos.four} />
                 </div>
               </div>
 
