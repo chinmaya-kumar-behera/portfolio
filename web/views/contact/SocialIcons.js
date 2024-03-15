@@ -1,16 +1,26 @@
-import NavigationHandler from '@/handler/NavigationHandler';
-import React from 'react'
-import { FaFacebookF, FaGithub, FaInstagram, FaLinkedinIn, FaTwitter } from "react-icons/fa";
-
+import NavigationHandler from "@/handler/NavigationHandler";
+import React from "react";
+import {
+  FaFacebookF,
+  FaGithub,
+  FaInstagram,
+  FaLinkedinIn,
+  FaTwitter,
+} from "react-icons/fa";
 
 const SocialIcons = () => {
-        const { navigateToLinkedin, navigateToInstagram,
-        navigateToGithub, navigateToFacebook, navigateToTwitter, } = NavigationHandler();
-    
-      const iconStyle = `p-3 bg-blue-500 text-white rounded-full shadow-blue-300 cursor-pointer hover:bg-blue-50 hover:text-blue-500 transition-all duration-500 `;
-    
+  const {
+    navigateToLinkedin,
+    navigateToInstagram,
+    navigateToGithub,
+    navigateToFacebook,
+    navigateToTwitter,
+  } = NavigationHandler();
+
+  const iconStyle = `p-3 bg-gray-100 bg-opacity-10 text-white rounded-full cursor-pointer hover:text-blue-500 transition-all duration-300`;
+
   return (
-    <div className="flex gap-2 items-center">
+    <div className="flex gap-2 items-center justify-center lg:justify-start">
       <button className={iconStyle} onClick={navigateToLinkedin}>
         <FaLinkedinIn />
       </button>
@@ -28,6 +38,6 @@ const SocialIcons = () => {
       </button>
     </div>
   );
-}
+};
 
-export default SocialIcons
+export default SocialIcons;

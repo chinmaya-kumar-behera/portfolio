@@ -68,6 +68,8 @@ const Navbar = () => {
         {/* <ThemeSwitch /> */}
       </div>
 
+      
+      {/* mobile screen */}
       <div className="mr-4 lg:hidden">
         <button
           onClick={handleMenuToggle}

@@ -39,7 +39,7 @@ const ProjectCard = ({ onClick, data }) => {
             className="object-cover object-center h-full w-full rounded"
           />
         </div>
-        <div className="p-3 space-y-2">
+        <div className="py-3 space-y-2">
           <div className="flex flex-col md:flex-row justify-between items-center gap-3">
             <h3 className="font-semibold text-lg md:text-2xl text-blue-700">
               {data.projectTitle}

@@ -10,7 +10,7 @@ import { THEME_COLOR } from "@/constant/color.constant";
 const Experience = () => {
   <strong></strong>
   const Exp = {
-    role: "Web Full Stack Developer",
+    role: "Web Full Stack Developer", 
     description: [
       "Assisted with creating highly interactive and reusable web components using the JavaScript library <strong>React.js</strong>.",
       "Proficiency in frameworks including <strong>Tailwind CSS</strong>, <strong>Material Tailwind</strong>, and <strong>Material UI</strong> for streamlined web development.",
