@@ -47,8 +47,8 @@ const PhotoGallery = ({ photos }) => {
               <div
                 key={index}
                 className={`relative h-[90px] w-full ${
-                  activeIndex === index ? "opacity-50" : ""
-                } cursor-pointer`}
+                  activeIndex === index ? "opacity-50 bg-gray-800" : ""
+                } cursor-pointer border rounded border-gray-400`}
                 onClick={() => handleImageClick(index)}
               >
                 <Image
@@ -70,23 +70,23 @@ const PhotoGallery = ({ photos }) => {
           </div>
         </div>
 
-        <div className="">
+        {/* <div className="">
           {photos.map((el, index) => (
             <div
               key={index}
               className={`relative h-[90px] w-full ${
-                activeIndex === index ? "opacity-50" : ""
+                activeIndex === index ? "opacity-50 bg-gray-800" : ""
               } cursor-pointer`}
               onClick={() => handleImageClick(index)}
             >
               <Image
                 src={el}
-                className="object-cover object-center rounded"
+                className="object-cover object-center rounded border border-gray-500"
                 fill={true}
               />
             </div>
           ))}
-        </div>
+        </div> */}
 
         <div className="w-full h-full">
           <div className="relative h-[310px] lg:h-full w-full">
@@ -96,7 +96,7 @@ const PhotoGallery = ({ photos }) => {
                 src={el}
                 className={`object-cover object-center ${
                   activeIndex === index ? "" : "hidden"
-                }`}
+                } border border-gray-300 rounded`}
                 fill={true}
               />
             ))}
@@ -107,8 +107,8 @@ const PhotoGallery = ({ photos }) => {
               <div
                 key={index}
                 className={`relative h-[50px] w-[50px] ${
-                  activeIndex === index ? "opacity-50" : ""
-                } cursor-pointer`}
+                  activeIndex === index ? "opacity-50 bg-gray-800" : ""
+                } cursor-pointer border rounded`}
                 onClick={() => handleImageClick(index)}
               >
                 <Image
@@ -121,6 +121,7 @@ const PhotoGallery = ({ photos }) => {
           </div>
         </div>
       </div>
+      <div className="text-center text-sm py-3"><p>Photos</p></div>
     </div>
   );
 };

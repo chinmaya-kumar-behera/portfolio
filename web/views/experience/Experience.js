@@ -5,7 +5,6 @@ import VerticalLine from "./components/VerticalLine";
 import Image from "next/image";
 import learnDukeImage from "../../_asssets/images/learnduke-image.png"
 import { SectionHeading } from "@/components/shared";
-import { THEME_COLOR } from "@/constant/color.constant";
 
 const Experience = () => {
   const Exp = {
