@@ -9,6 +9,7 @@ const Profile = () => {
       id="profile-section"
       className="flex flex-col items-between h-full"
     >
+      {/* large screen */}
       <div className="hidden h-full lg:flex justify-between items-end lg:pl-5">
         <div className="w-1/2 h-full lg:flex flex-col justify-center gap-8 ">
           <div className="space-y-4 text-lg text-gray-200">
@@ -57,7 +58,7 @@ const Profile = () => {
       <div className="lg:hidden h-auto relative rounded-3xl md:flex justify-center mt-10">
         <div className="z-10 flex justify-center">
           <div className="w-[300px] lg:flex pt-5 px-5 flex-col justify-center items-center gap-8">
-            <div className="space-y-4 text-sm sm:text-md text-gray-500 h-[50px] text-center">
+            <div className="space-y-4 text-sm sm:text-md text-gray-500 h-fit text-center">
               <TypeAnimation
                 sequence={["HELLO, MY NAME IS"]}
                 wrapper="span"
@@ -73,7 +74,7 @@ const Profile = () => {
             <div className="mt-4 space-y-2 font-serif text-center">
               <div className="h-[50px]">
                 <TypeAnimation
-                  sequence={[1000, "Chinmaya Kumar"]}
+                  sequence={[1000, "Chinmaya Kumar behera"]}
                   wrapper="span"
                   speed={5}
                   className="text-3xl font-extrabold font-playfair"

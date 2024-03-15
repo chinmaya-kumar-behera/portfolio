@@ -7,6 +7,7 @@ import Link from "next/link";
 import CopyButton from "./CopyButton";
 import SocialIcons from "./SocialIcons";
 import { MdCheck } from "react-icons/md";
+import { Heading } from "@/components/shared";
 
 const Contact = () => {
   const [mailText, setMailText] = useState('copy to clipboard');
@@ -47,9 +48,9 @@ const Contact = () => {
       <div className="space-y-5">
         <div className="space-y-5">
           <div className="text-center">
-            {/* <h1 className="text-3xl lg:text-6xl font-bold font-playfair">
-              Contact Me
-            </h1> */}
+            <Heading>
+              <h1> Contact Me</h1>
+            </Heading>
           </div>
           <div className="">
             <div className="flex items-center gap-3 py-2">

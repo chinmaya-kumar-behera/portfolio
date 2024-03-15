@@ -8,7 +8,6 @@ import { SectionHeading } from "@/components/shared";
 import { THEME_COLOR } from "@/constant/color.constant";
 
 const Experience = () => {
-  <strong></strong>
   const Exp = {
     role: "Web Full Stack Developer", 
     description: [
@@ -36,9 +35,8 @@ const Experience = () => {
     </div>
   );
 
-
   return (
-    <section className="relative w-full lg:space-y-5">
+    <section id="experience" className="relative w-full lg:space-y-5">
       <SectionHeading heading={"Experience"} />
 
       <div className="space-y-5 lg:space-y-10 py-10">
@@ -76,19 +74,33 @@ const Experience = () => {
           <div className="w-full lg:w-2/5 px-0 lg:px-5 py-2 flex items-center">
             <div className="relative h-[300px] md:[400px] lg:h-[450px] space-y-3 w-full rounded ">
               <div className="h-1/2 w-full flex justify-end items-end gap-3">
-                <div className="relative w-[15%] h-[20%] bg-blue-300">{ImageComp}</div>
-                <div className="relative w-[25%] h-[90%] bg-blue-300">{ImageComp}</div>
+                <div className="relative w-[15%] h-[20%] bg-blue-300">
+                  {ImageComp}
+                </div>
+                <div className="relative w-[25%] h-[90%] bg-blue-300">
+                  {ImageComp}
+                </div>
                 <div className="w-[45%] h-full flex flex-col gap-3">
                   <div className="w-full h-[50%] flex gap-3">
-                    <div className="relative w-[50%] h-full bg-blue-300">{ImageComp}</div>
+                    <div className="relative w-[50%] h-full bg-blue-300">
+                      {ImageComp}
+                    </div>
                   </div>
-                  <div className="relative w-full h-[50%] bg-blue-300">{ImageComp}</div>
+                  <div className="relative w-full h-[50%] bg-blue-300">
+                    {ImageComp}
+                  </div>
                 </div>
               </div>
               <div className="h-1/2 w-full flex justify-start items-start gap-3">
-                <div className="relative w-[40%] h-[60%] bg-blue-300">{ImageComp}</div>
-                <div className="relative w-[30%] h-[90%] bg-blue-300">{ImageComp}</div>
-                <div className="relative w-[20%] h-[50%] bg-blue-300">{ImageComp}</div>
+                <div className="relative w-[40%] h-[60%] bg-blue-300">
+                  {ImageComp}
+                </div>
+                <div className="relative w-[30%] h-[90%] bg-blue-300">
+                  {ImageComp}
+                </div>
+                <div className="relative w-[20%] h-[50%] bg-blue-300">
+                  {ImageComp}
+                </div>
               </div>
 
               {/* <div className="relative h-full w-full rounded">
