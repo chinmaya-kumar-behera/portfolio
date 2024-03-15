@@ -1,3 +1,17 @@
+// skill logos
+
+import js from "../../_asssets/logo/javascript.png";
+import css from "../../_asssets/logo/css.png";
+import git from "../../_asssets/logo/git.png";
+import sql from "../../_asssets/logo/sql.png";
+import react from "../../_asssets/logo/react.png";
+import node from "../../_asssets/logo/nodejs.png";
+import mongodb from "../../_asssets/logo/mongodb.png";
+import python from "../../_asssets/logo/python.png";
+import tailwind from "../../_asssets/logo/tailwind.png";
+import next from "../../_asssets/logo/next.png";
+import html from "../../_asssets/logo/html.png";
+
 
 // WOrkers Hive
 import workersHiveThumbNail from "../../_asssets/images/projects/workers-hive/thumbnail.png"
@@ -8,14 +22,19 @@ import wh_sample_4 from "../../_asssets/images/projects/workers-hive/sample_img_
 import wh_sample_5 from "../../_asssets/images/projects/workers-hive/sample_img_5.png";
 import wh_sample_6 from "../../_asssets/images/projects/workers-hive/sample_img_6.png";
 import wh_sample_7 from "../../_asssets/images/projects/workers-hive/sample_img_7.png";
-import demo1 from "../../_asssets/images/demo1.jpeg";
-import demo2 from "../../_asssets/images/demo2.jpg";
-import demo3 from "../../_asssets/images/demo3.jpg";
+
 import workersHiveLogo from "../../_asssets/images/projects/workers-hive/logo.jpg"
 
 // for LaslesVPN Landing page
 import LaslesVPN_landingPage from "../../_asssets/images/projects/lasles-vpn/thumbnail.png";
 
+
+// forkify
+
+import ffThumbnail from "../../_asssets/images/projects/forkify/thumbnail.png"
+import ff_sample_1 from "../../_asssets/images/projects/forkify/ff_sample_1.png"
+import ff_sample_2 from "../../_asssets/images/projects/forkify/ff_sample_2.png"
+import ff_sample_3 from "../../_asssets/images/projects/forkify/ff_sample_3.png"
 
 
 export const ProjectLists = [
@@ -75,11 +94,11 @@ export const ProjectLists = [
       },
     ],
     techStacks: [
-      "React.js",
-      "Next.js",
-      "node.js",
-      "Express.js",
-      "Tailwinds CSS",
+      { name: "React.js", logo: react },
+      { name: "Node.js", logo: node },
+      { name: "MongoDB", logo: mongodb },
+      { name: "Next.js", logo: next },
+      { name: "Tailwind.css", logo: tailwind },
     ],
     githubLink: "https:/github.com/chinmaya-kumar-behera",
     logo: workersHiveLogo,
@@ -89,123 +108,51 @@ export const ProjectLists = [
 
   {
     id: 2,
-    projectTitle: "AI Finder",
-    description: "A site to search AI tools",
-    thumbnaiil: workersHiveThumbNail,
+    projectTitle: "Forkify",
+    description: "A web app for finding the food recipe.",
+    thumbnaiil: ffThumbnail,
     images: [
       {
         id: 1,
-        src: wh_sample_1,
+        src: ff_sample_1,
       },
       {
         id: 2,
-        src: demo1,
+        src: ff_sample_2,
       },
       {
         id: 3,
-        src: demo2,
-      },
-      {
-        id: 4,
-        src: demo3,
+        src: ff_sample_3,
       },
     ],
-    topDesc: `This is a comprehensive MERN stack Web Application providing on demand service at the customers doorstep. The services are in various fields like Electronics, plumbing etc. I have used the latest technology for building this app. `,
-    workDetails: [
-      {
-        id: 1,
-        desc: "This is because paragraphs show a reader where the subdivisions of an essay begin and end, and thus help the reader see the organization of the essay and grasp its main points. Paragraphs can contain many different kinds of information. ",
-      },
-      {
-        id: 2,
-        desc: "This is because paragraphs show a reader where the subdivisions of an essay begin and end, and thus help the reader see the organization of the essay and grasp its main points. Paragraphs can contain many different kinds of information. ",
-      },
-      {
-        id: 3,
-        desc: "This is because paragraphs show a reader where the subdivisions of an essay begin and end, and thus help the reader see the organization of the essay and grasp its main points. Paragraphs can contain many different kinds of information. ",
-      },
-      {
-        id: 4,
-        desc: "This is because paragraphs show a reader where the subdivisions of an essay begin and end, and thus help the reader see the organization of the essay and grasp its main points. Paragraphs can contain many different kinds of information. ",
-      },
-      {
-        id: 5,
-        desc: "This is because paragraphs show a reader where the subdivisions of an essay begin and end, and thus help the reader see the organization of the essay and grasp its main points. Paragraphs can contain many different kinds of information. ",
-      },
-      {
-        id: 6,
-        desc: "This is because paragraphs show a reader where the subdivisions of an essay begin and end, and thus help the reader see the organization of the essay and grasp its main points. Paragraphs can contain many different kinds of information. ",
-      },
-      {
-        id: 7,
-        desc: "This is because paragraphs show a reader where the subdivisions of an essay begin and end, and thus help the reader see the organization of the essay and grasp its main points. Paragraphs can contain many different kinds of information. ",
-      },
-      {
-        id: 8,
-        desc: "This is because paragraphs show a reader where the subdivisions of an essay begin and end, and thus help the reader see the organization of the essay and grasp its main points. Paragraphs can contain many different kinds of information. ",
-      },
-      {
-        id: 9,
-        desc: "This is because paragraphs show a reader where the subdivisions of an essay begin and end, and thus help the reader see the organization of the essay and grasp its main points. Paragraphs can contain many different kinds of information. ",
-      },
-    ],
-    techStacks: ["React.js", "Next.js", "Tailwinds CSS"],
-    githubLink: "https:/github.com/chinmaya-kumar-behera",
-    logo: workersHiveLogo,
-    isOpenSourse: false,
-    websiteLink: "https://workers-hive.vercel.app/",
-  },
 
-  {
-    id: 3,
-    projectTitle: "Lasles VPN",
-    description: "A site to search AI tools",
-    thumbnaiil: LaslesVPN_landingPage,
-    images: [
-      {
-        id: 1,
-        src: wh_sample_1,
-      },
-      {
-        id: 2,
-        src: demo1,
-      },
-      {
-        id: 3,
-        src: demo2,
-      },
-      {
-        id: 4,
-        src: demo3,
-      },
-    ],
-    topDesc: `This is a comprehensive MERN stack Web Application providing on demand service at the customers doorstep. The services are in various fields like Electronics, plumbing etc. I have used the latest technology for building this app. `,
+    topDesc: `This innovative tool allows users to effortlessly discover ingredients of any food. `,
     workDetails: [
       {
         id: 1,
-        desc: "This is because paragraphs show a reader where the subdivisions of an essay begin and end, and thus help the reader see the organization of the essay and grasp its main points. Paragraphs can contain many different kinds of information. ",
+        desc: "Build thid Recipe Finder app using HTML, CSS, and JavaScript. Maintained a clean user interface using CSS to enhance the overall user experience, ensuring ease of navigation and readability of search results and bookmarked recipes",
       },
       {
         id: 2,
-        desc: "This is because paragraphs show a reader where the subdivisions of an essay begin and end, and thus help the reader see the organization of the essay and grasp its main points. Paragraphs can contain many different kinds of information. ",
+        desc: "Utilized JavaScript's Fetch API to asynchronously fetch data from a third-party API capable of providing access to over one million food items, enhancing the application's functionality and usability.",
       },
       {
         id: 3,
-        desc: "This is because paragraphs show a reader where the subdivisions of an essay begin and end, and thus help the reader see the organization of the essay and grasp its main points. Paragraphs can contain many different kinds of information. ",
+        desc: "Worked with browsers localstorage for storing bookmarked items.",
       },
       {
         id: 4,
-        desc: "This is because paragraphs show a reader where the subdivisions of an essay begin and end, and thus help the reader see the organization of the essay and grasp its main points. Paragraphs can contain many different kinds of information. ",
-      },
-      {
-        id: 5,
-        desc: "This is because paragraphs show a reader where the subdivisions of an essay begin and end, and thus help the reader see the organization of the essay and grasp its main points. Paragraphs can contain many different kinds of information. ",
+        desc: "Worked with browsers localstorage for storing bookmarked items.",
       },
     ],
-    techStacks: ["React.js", "Next.js", "Tailwinds CSS"],
+    techStacks: [
+      { name: "HTML", logo: html },
+      { name: "CSS", logo: css },
+      { name: "JavaScript", logo: js },
+    ],
     githubLink: "https:/github.com/chinmaya-kumar-behera",
-    logo: workersHiveLogo,
-    isOpenSourse: false,
-    websiteLink: "https://workers-hive.vercel.app/",
+    // logo: workersHiveLogo,
+    isOpenSourse: true,
+    websiteLink: "https://easy-recipe-finder.netlify.app/",
   },
 ];
