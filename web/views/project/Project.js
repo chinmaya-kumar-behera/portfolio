@@ -153,7 +153,7 @@
 // export default Project;
 
 "use client";
-import { Accordion, PageContainer } from "@/components/shared";
+import { Accordion, Heading, PageContainer } from "@/components/shared";
 import React, { useEffect, useState } from "react";
 import ProjectCard from "./components/ProjectCard";
 import { ProjectLists } from "./project.doc";
@@ -204,9 +204,9 @@ const Project = () => {
     <main id="projects" className="min-h-screen space-y-3">
       <PageContainer className={"px-4 lg:px-0 py-5 lg:py-0"}>
         <div className="w-full text-center py-10 space-y-5">
-          <div className="w-full  font-bold text-3xl lg:text-5xl">
+          <Heading>
             <h1 className="">Some of My Notable Projects</h1>
-          </div>
+          </Heading>
           <div className="max-w-xl mx-auto">
             <p>
               One of my standout achievements includes developing a custom web

@@ -51,7 +51,7 @@ import Image from "next/image";
 
 
 
-import { PageContainer } from "@/components/shared";
+import { Heading, PageContainer } from "@/components/shared";
 import React from "react";
 
 const Skills = () => {
@@ -99,9 +99,9 @@ const Skills = () => {
     <main id="skills" className="py-10">
       <PageContainer className={"px-4 lg:px-0 py-5 lg:py-0"}>
         <div className="py-10 lg:py-20 space-y-5 text-center">
-          <div className="w-full font-bold text-3xl lg:text-5xl">
+          <Heading>
             <h1 className="">Expertise That Drives Results</h1>
-          </div>
+          </Heading>
           <div className="w-full max-w-4xl mx-auto">
             <p>
               My expertise in full-stack development, React.js, and Node.js

@@ -65,14 +65,14 @@ const Contact = () => {
                   />
                 </Link>
               </div>
-              <span className="text-xl sm:text-2xl lg:text-3xl font-barlow-semi-condensed font-bold tracking-wider text-gray-600">
-                CHINMAYA KUMAR
+              <span className="text-lg sm:text-2xl lg:text-3xl font-barlow-semi-condensed font-bold tracking-wider text-gray-600">
+                CHINMAYA KUMAR BEHERA
               </span>
             </div>
           </div>
         </div>
-        
-        <div className="space-y-2 font-barlow-semi-condensed text-sm lg:text-lg max-w-[2  00px]">
+
+        <div className="space-y-2 lg:space-y-0 font-barlow-semi-condensed text-sm lg:text-lg max-w-[200px]">
           <div className="flex items-center gap-2 relative group cursor-pointer">
             <span
               className="p-1.5 rounded-full"
@@ -83,7 +83,9 @@ const Contact = () => {
             <span className="font-semibold text-gray-700 sm:tracking-wider">
               {mail}
             </span>
-            <CopyButton onClick={onMailButtonClick} text={text} />
+            <div className="hide md:block">
+              <CopyButton onClick={onMailButtonClick} text={text} />
+            </div>
           </div>
           <div className="flex items-center gap-2 relative group">
             <span
@@ -95,7 +97,9 @@ const Contact = () => {
             <span className="font-semibold text-gray-700 sm:tracking-widest cursor-pointer">
               {phoneNumber}
             </span>
-            <CopyButton onClick={onPhoneButtonClick} text={text} />
+            <div className="hide md:block">
+              <CopyButton onClick={onPhoneButtonClick} text={text} />
+            </div>
           </div>
         </div>
       </div>
