@@ -26,16 +26,16 @@ const Profile = () => {
           <div className="space-y-10 font-serif">
             <div className="h-[50px]">
               <TypeAnimation
-                sequence={[1000, "Chinmaya Kumar"]}
+                sequence={[1000, "Chinmaya Kumar Behera"]}
                 wrapper="span"
                 speed={5}
-                className="text-5xl xl:text-7xl font-extrabold font-playfair"
+                className="text-5xl xl:text-5xl font-extrabold font-playfair"
                 repeat={1}
                 cursor={false}
               />
             </div>
             <h5 className="text-3xl font-bold text-gray-200 text-shadow-sm">
-              Full Stack Developer
+              <small className='font-normal text-gray-100'>I am a </small>Full Stack Developer
             </h5>
           </div>
 
@@ -87,9 +87,9 @@ const Profile = () => {
               </h5>
             </div>
 
-            <div className="flex justify-center mt-10">
+            {/* <div className="flex justify-center mt-10">
               <ContactButton className={"px-7 py-3"} />
-            </div>
+            </div> */}
           </div>
         </div>
 
