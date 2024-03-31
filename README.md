@@ -1,4 +1,4 @@
-# [Your Name]'s Portfolio Site
+# Chinmaya Kumar Behera's Portfolio Site
 Welcome to my portfolio site! This is where I showcase my projects, skills, and experiences.
 
 # Image 
