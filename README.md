@@ -50,8 +50,19 @@ npm install
 ``` bash
 npm start
 ```
-
 Open your browser and visit http://localhost:3000 to view the app.
+
+# Deployment
+This portfolio site is deployed using Vercel. Vercel provides a seamless deployment experience for static sites and offers features like continuous deployment and custom domain support.
+
+### To deploy your own version of this site using Vercel, follow these steps:
+
+- Sign up for a Vercel account if you haven't already.
+-Install the Vercel CLI by running npm install -g vercel.
+- Navigate to the root directory of your project in the terminal.
+- Run the command vercel login and follow the prompts to log in to your Vercel account.
+- Run the command vercel --prod to deploy your site to production.
+- Your site will be deployed to a unique URL provided by Vercel, such as https://your-project-name.vercel.app.
 
 # Support
 If you encounter any issues or have any questions, feel free to reach out to me at [official.chinu2127@gmail.com ] or mobile : 7008962911.
