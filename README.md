@@ -34,22 +34,23 @@ Host the files on a web server or deploy it using platforms like GitHub Pages, N
 
 # installation:
 1.Clone the repository:
-
+``` bash
 git clone <repository-url>
+```
 2.Navigate to the project directory:
-
+``` bash
 cd weather-app
+```
 3.Install dependencies:
-
+``` bash
 npm install
-4.Create a .env file in the root directory and add your OpenWeatherMap API key:
+```
 
-REACT_APP_API_KEY=your-openweathermap-api-key
-REACT_APP_API_URL=https://api.openweathermap.org/data/2.5
-REACT_APP_ICON_BASE_URL=https://openweathermap.org/img
-5.Start the development server:
-
+4.Start the development server:
+``` bash
 npm start
+```
+
 Open your browser and visit http://localhost:3000 to view the app.
 
 # Support
