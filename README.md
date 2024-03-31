@@ -4,6 +4,9 @@ Welcome to my portfolio site! This is where I showcase my projects, skills, and 
 # Image 
 ![image](https://github.com/chinmaya-kumar-behera/portfolio/assets/101429530/e80e50b2-b4e2-4e97-b7b6-07fb30c775bf)
 
+# site url : 
+
+- url : https://portfolio.chinmaya.vercel.app/ or [click here](https://portfolio.chinmaya.vercel.app/)
 
 # Table of Contents
 * Intro
