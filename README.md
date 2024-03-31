@@ -53,6 +53,6 @@ npm start
 Open your browser and visit http://localhost:3000 to view the app.
 
 # Support
-If you encounter any issues or have any questions, feel free to reach out to me at [official.chinu2127@gmail.com ] or [other contact methods].
+If you encounter any issues or have any questions, feel free to reach out to me at [official.chinu2127@gmail.com ] or mobile : 7008962911.
 
 Feel free to customize this template further to fit your specific needs and style preferences. You can add more sections, change the formatting, or include additional information as needed.
