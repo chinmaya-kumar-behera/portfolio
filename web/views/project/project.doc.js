@@ -146,10 +146,22 @@ export const ProjectLists = [
       { id: 2, desc: "Download the codes as text file." },
       {
         id: 3,
+        desc: "User authentication mechanisms including login and signup functionalities.",
+      },
+      {
+        id: 4,
+        desc: "User-centric dashboard providing detailed insights into code sharing history and activity.",
+      },
+      {
+        id: 5,
+        desc: "’view-only’ mode feature allowing users to restrict access to shared code to others.",
+      },
+      {
+        id: 6,
         desc: "Syntax highlighting for various programming languages. (like JavaScript and Python)",
       },
-      { id: 4, desc: "Code sharing with unique URLs." },
-      { id: 5, desc: "Responsive design for mobile and desktop devices." },
+      { id: 7, desc: "Code sharing with unique URLs." },
+      { id: 8, desc: "Responsive design for mobile and desktop devices." },
     ],
     workDetails: [
       {
@@ -172,6 +184,20 @@ export const ProjectLists = [
         id: 5,
         desc: "Utilized Tailwind CSS for responsive design, ensuring optimal rendering on both mobile and desktop devices.",
       },
+      {
+        id: 6,
+        desc: "Notably, the application includes advanced features allowing users to restrict access to shared code to ’view-only’ mode.",
+      },
+      {
+        id: 7,
+        desc: "implemented a user-centric dashboard providing detailed insights into code sharing history and activity.",
+      },
+       {
+        id: 7,
+        desc: "Robust user authentication mechanisms including login and signup functionalities.",
+      },
+      
+      
     ],
     techStacks: [
       { name: "React.js", logo: react },
