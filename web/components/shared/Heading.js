@@ -2,7 +2,7 @@ import React from 'react'
 
 const Heading = ({children}) => {
   return (
-    <div className="w-full font-bold text-xl lg:text-2xl">
+    <div className="w-full font-bold text-3xl lg:text-5xl">
       {children}
     </div>
   );
