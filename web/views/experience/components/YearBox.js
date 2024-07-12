@@ -15,7 +15,7 @@ const YearBox = () => {
     // </div>
 
     <div className="">
-      <Button className={'min-w-[130px]'}>2022-2023</Button>
+      <Button className={'min-w-[130px]'}>2022-2024</Button>
     </div>
   );
 }
