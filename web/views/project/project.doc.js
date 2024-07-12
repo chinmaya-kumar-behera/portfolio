@@ -11,7 +11,7 @@ import python from "../../_asssets/logo/python.png";
 import tailwind from "../../_asssets/logo/tailwind.png";
 import next from "../../_asssets/logo/next.png";
 import html from "../../_asssets/logo/html.png";
-import socketIo from "../../_asssets/logo/socketIo.png";
+// import socketIo from "../../_asssets/logo/socketIo.png";
 
 
 
@@ -164,7 +164,7 @@ export const ProjectLists = [
       { name: "Node.js", logo: node },
       { name: "MongoDB", logo: mongodb },
       { name: "Next.js", logo: next },
-      { name: "Socket.IO", logo: socketIo },
+      // { name: "Socket.IO", logo: socketIo },
       { name: "Tailwind.css", logo: tailwind },
     ],
     githubLink: "https:/github.com/chinmaya-kumar-behera",
@@ -355,7 +355,7 @@ export const ProjectLists = [
       { name: "Node.js", logo: node },
       { name: "mongoose", logo: mongodb },
       { name: "Tailwindcss", logo: tailwind },
-      { name: "Socket.IO", logo: socketIo },
+      // { name: "Socket.IO", logo: socketIo },
     ],
     githubLink: "https://github.com/chinmaya-kumar-behera/codeshare",
     logo: workersHiveLogo,
