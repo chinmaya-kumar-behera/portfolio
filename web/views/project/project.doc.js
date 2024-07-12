@@ -177,23 +177,49 @@ export const ProjectLists = [
         src: sc_sample_8,
       },
     ],
-    topDesc: `This is a comprehensive MERN stack Web Application providing on demand service at the customers doorstep. The services are in various fields like Electronics, plumbing etc. I have used the latest technology for building this app. `,
-    workDetails: [
-      {
-        id: 1,
-        desc: "Implemented a search functionality on the home page enabling users to find technicians based on specific criteria, enhancing user experience and service accessibility. ",
-      },
-      {
-        id: 2,
-        desc: "Designed and implemented user registration, allowing customers to access the platform and avail of services.",
-      },
+    topDesc: `Developed a comprehensive shopping cart eCommerce website that showcases products based on various categories. Users can select and add products to the cart, and from the cart section, they can proceed to checkout and place orders. The website integrates Razorpay for secure payment processing. Users can also view their order history.`,
+    features: [
+      { id: 1, desc: "Product Display by Category" },
+      { id: 2, desc: "Shopping Cart" },
       {
         id: 3,
-        desc: "Integrated a real-time chat window, facilitating seamless communication between users and technicians. This feature enhances user engagement and allows quick problem resolution. ",
+        desc: "Checkout and Order Placement",
       },
       {
         id: 4,
-        desc: "Developed an admin panel to efficiently manage and maintain service categories such as plumber, electrician, and barber. Included functionality to add and update sub-categories for each service, ensuring accurate classification of services offered.",
+        desc: "Order History",
+      },
+      {
+        id: 5,
+        desc: "Dark and Light Mode",
+      },
+      {
+        id: 6,
+        desc: "Syntax highlighting for various programming languages. (like JavaScript and Python)",
+      },
+      { id: 7, desc: "Code sharing with unique URLs." },
+      { id: 8, desc: "Responsive design for mobile and desktop devices." },
+    ],
+    workDetails: [
+      {
+        id: 1,
+        desc: `Products are organized and displayed based on various categories for easy browsing. Users can filter products by category, price, and other attributes..`,
+      },
+      {
+        id: 2,
+        desc: `Users can add products to the shopping cart with a single click. The cart displays selected products with their quantities and prices. Users can update product quantities or remove items from the cart.`,
+      },
+      {
+        id: 3,
+        desc: `Seamless checkout process allowing users to review their cart items before placing an order. Integrated Razorpay for secure and efficient payment processing. Users receive order confirmation and details after a successful transaction.`,
+      },
+      {
+        id: 4,
+        desc: `Users can view their past orders and order details. Order history includes product details, order status, and payment information.`,
+      },
+      {
+        id: 5,
+        desc: `Implemented dark and light mode for better user experience. Users can switch between modes based on their preference.`,
       },
     ],
     techStacks: [
