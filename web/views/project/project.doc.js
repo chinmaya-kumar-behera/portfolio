@@ -26,6 +26,19 @@ import wh_sample_5 from "../../_asssets/images/projects/workers-hive/sample_img_
 import wh_sample_6 from "../../_asssets/images/projects/workers-hive/sample_img_6.png";
 import wh_sample_7 from "../../_asssets/images/projects/workers-hive/sample_img_7.png";
 
+
+// shopping cart
+import shoppingcartThumbNail from "../../_asssets/images/projects/shoppingCart/thumbnail.png"
+import sc_sample_1 from "../../_asssets/images/projects/shoppingCart/image1.png";
+import sc_sample_2 from "../../_asssets/images/projects/shoppingCart/image2.png";
+import sc_sample_3 from "../../_asssets/images/projects/shoppingCart/image3.png";
+import sc_sample_4 from "../../_asssets/images/projects/shoppingCart/image4.png";
+import sc_sample_5 from "../../_asssets/images/projects/shoppingCart/image5.png";
+import sc_sample_6 from "../../_asssets/images/projects/shoppingCart/image6.png";
+import sc_sample_7 from "../../_asssets/images/projects/shoppingCart/image7.png";
+import sc_sample_8 from "../../_asssets/images/projects/shoppingCart/image8.png";
+
+
 // for LaslesVPN Landing page
 import LaslesVPN_landingPage from "../../_asssets/images/projects/lasles-vpn/thumbnail.png";
 
@@ -54,6 +67,7 @@ import wp_sample_1 from "../../_asssets/images/projects/weather/sample1.png";
 
 
 export const ProjectLists = [
+  // workers hive
   {
     id: 1,
     projectTitle: "Workers Hive",
@@ -114,15 +128,90 @@ export const ProjectLists = [
       { name: "Node.js", logo: node },
       { name: "MongoDB", logo: mongodb },
       { name: "Next.js", logo: next },
+      { name: "Socket.IO", logo: socketIo },
       { name: "Tailwind.css", logo: tailwind },
     ],
     githubLink: "https:/github.com/chinmaya-kumar-behera",
     logo: workersHiveLogo,
     isOpenSourse: false,
     websiteLink: "https://workers-hive.vercel.app/",
+    isDisplayed: true,
   },
+
   {
     id: 2,
+    projectTitle: "Shopping Cart",
+    description: "A comprehensive shopping cart eCommerce website.",
+    thumbnaiil: shoppingcartThumbNail,
+    images: [
+      {
+        id: 1,
+        src: sc_sample_1,
+      },
+      {
+        id: 2,
+        src: sc_sample_2,
+      },
+      {
+        id: 3,
+        src: sc_sample_3,
+      },
+      {
+        id: 4,
+        src: sc_sample_4,
+      },
+      {
+        id: 4,
+        src: sc_sample_5,
+      },
+      {
+        id: 4,
+        src: sc_sample_6,
+      },
+      {
+        id: 4,
+        src: sc_sample_7,
+      },
+      {
+        id: 4,
+        src: sc_sample_8,
+      },
+    ],
+    topDesc: `This is a comprehensive MERN stack Web Application providing on demand service at the customers doorstep. The services are in various fields like Electronics, plumbing etc. I have used the latest technology for building this app. `,
+    workDetails: [
+      {
+        id: 1,
+        desc: "Implemented a search functionality on the home page enabling users to find technicians based on specific criteria, enhancing user experience and service accessibility. ",
+      },
+      {
+        id: 2,
+        desc: "Designed and implemented user registration, allowing customers to access the platform and avail of services.",
+      },
+      {
+        id: 3,
+        desc: "Integrated a real-time chat window, facilitating seamless communication between users and technicians. This feature enhances user engagement and allows quick problem resolution. ",
+      },
+      {
+        id: 4,
+        desc: "Developed an admin panel to efficiently manage and maintain service categories such as plumber, electrician, and barber. Included functionality to add and update sub-categories for each service, ensuring accurate classification of services offered.",
+      },
+    ],
+    techStacks: [
+      { name: "React.js", logo: react },
+      { name: "Node.js", logo: node },
+      { name: "MongoDB", logo: mongodb },
+      { name: "Tailwind.css", logo: tailwind },
+    ],
+    githubLink: "https://github.com/chinmaya-kumar-behera/shopping-cart",
+    logo: workersHiveLogo,
+    isOpenSourse: true,
+    websiteLink: "https://chinmaya-shoppingcart.vercel.app/",
+    isDisplayed: true,
+  },
+
+  // code share
+  {
+    id: 3,
     projectTitle: "CodeShare",
     description:
       "This project is a clone of the popular CodeShare website, allowing users to collaborate on code in real-time.",
@@ -210,10 +299,12 @@ export const ProjectLists = [
     logo: workersHiveLogo,
     isOpenSourse: true,
     websiteLink: "https://codeshare.chinmaya.vercel.app/",
+    isDisplayed: true,
   },
 
+  // photo clould
   {
-    id: 3,
+    id: 4,
     projectTitle: "PhotoCloud",
     description:
       "This site is very useful to upload your local images in the cloud and generate image remote image urls foeach each and every images.",
@@ -269,9 +360,12 @@ export const ProjectLists = [
     logo: workersHiveLogo,
     isOpenSourse: true,
     websiteLink: "https://photocloud.vercel.app/",
+    isDisplayed: true,
   },
+
+  // wather app
   {
-    id: 4,
+    id: 5,
     projectTitle: "Weather-App",
     description:
       "This Weather App allows users to check the current weather and weekly forecast for a specific city. Users can search for weather details by entering the city name or allowing the app to use their current location.",
@@ -324,10 +418,12 @@ export const ProjectLists = [
     logo: workersHiveLogo,
     isOpenSourse: true,
     websiteLink: "https://weather.chinmaya.vercel.app/",
+    isDisplayed: true,
   },
 
+  // forkify
   {
-    id: 5,
+    id: 6,
     projectTitle: "Forkify",
     description: "A web app for finding the food recipe.",
     thumbnaiil: ffThumbnail,
@@ -369,6 +465,7 @@ export const ProjectLists = [
     githubLink: "https://github.com/chinmaya-kumar-behera/forkify",
     logo: workersHiveLogo,
     isOpenSourse: true,
-    websiteLink: "https://easy-recipe-finder.netlify.app/",
+    websiteLink: "https://forkify-beta-snowy.vercel.app/",
+    isDisplayed: true,
   },
 ];
