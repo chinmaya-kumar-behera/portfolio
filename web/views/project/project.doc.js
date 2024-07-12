@@ -25,6 +25,9 @@ import wh_sample_4 from "../../_asssets/images/projects/workers-hive/sample_img_
 import wh_sample_5 from "../../_asssets/images/projects/workers-hive/sample_img_5.png";
 import wh_sample_6 from "../../_asssets/images/projects/workers-hive/sample_img_6.png";
 import wh_sample_7 from "../../_asssets/images/projects/workers-hive/sample_img_7.png";
+import wh_sample_8 from "../../_asssets/images/projects/workers-hive/sample_img_8.png";
+import wh_sample_9 from "../../_asssets/images/projects/workers-hive/sample_img_9.png";
+import wh_sample_10 from "../../_asssets/images/projects/workers-hive/sample_img_10.png";
 
 
 // shopping cart
@@ -103,8 +106,41 @@ export const ProjectLists = [
         id: 4,
         src: wh_sample_7,
       },
+      {
+        id: 4,
+        src: wh_sample_8,
+      },
+      {
+        id: 4,
+        src: wh_sample_9,
+      },
+      {
+        id: 4,
+        src: wh_sample_10,
+      },
     ],
     topDesc: `This is a comprehensive MERN stack Web Application providing on demand service at the customers doorstep. The services are in various fields like Electronics, plumbing etc. I have used the latest technology for building this app. `,
+
+    features: [
+      { id: 1, desc: "Search Technician" },
+      { id: 2, desc: "User Registration for Service Providers" },
+      {
+        id: 3,
+        desc: "Real-Time Chat Window",
+      },
+      {
+        id: 4,
+        desc: "Admin Dashboards",
+      },
+      {
+        id: 5,
+        desc: "Payment Integration for easy Transaction",
+      },
+      {
+        id: 6,
+        desc: "Appointments dashboard and history for both user and Service providers",
+      },
+    ],
     workDetails: [
       {
         id: 1,
