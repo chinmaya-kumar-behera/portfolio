@@ -11,6 +11,8 @@ import python from "../../_asssets/logo/python.png";
 import tailwind from "../../_asssets/logo/tailwind.png";
 import next from "../../_asssets/logo/next.png";
 import html from "../../_asssets/logo/html.png";
+import socketIo from "../../_asssets/logo/socketIo.png";
+
 
 
 // Workers Hive
@@ -192,19 +194,17 @@ export const ProjectLists = [
         id: 7,
         desc: "implemented a user-centric dashboard providing detailed insights into code sharing history and activity.",
       },
-       {
+      {
         id: 7,
         desc: "Robust user authentication mechanisms including login and signup functionalities.",
       },
-      
-      
     ],
     techStacks: [
       { name: "React.js", logo: react },
       { name: "Node.js", logo: node },
       { name: "mongoose", logo: mongodb },
       { name: "Tailwindcss", logo: tailwind },
-      { name: "Socket.IO", logo: tailwind },
+      { name: "Socket.IO", logo: socketIo },
     ],
     githubLink: "https://github.com/chinmaya-kumar-behera/codeshare",
     logo: workersHiveLogo,
